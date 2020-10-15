@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>UOW Room Booking System</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/jquery-ui.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/font-awesome.css" type="text/css" />
+    <link rel="stylesheet" href="../css/admin-booking.css" type="text/css" />
+
+    <script src="../js/modernizr-2.8.3.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery-1.12.0.min.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+    <script src="../js/plugins.js"></script>
+    <script src="../js/schedule.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-wrap">
+            <div class="container">
+                <!-- START OF LOGO -->
+                <div class="flexbox-header">
+                    <div class="image-wrapper">
+                        <img src="../images/uow-logo.png" class="uow-logo">
+                    </div>
+                    <div class="login-wrapper">
+                        <label><span class="logged-in">Logged in as: Administrator</span></label>
+                        <a href="login.php" class="btn"><span>Log out</span></a>
+                    </div>
+                </div>
+                <!-- END OF LOGO -->
+            </div>
+        </div>
+    </header>
+    <!-- END OF NAVIGATION -->
+
+    <!-- START OF HOMEPAGE BANNER -->
+    <div class="banner-wrap">
+        <img src="../images/banner1.jpeg">
+        <div class="titleheader-wrap">
+            <h2 class="sub-headline">
+                <span class="first-letter">W</span>elcome
+            </h2>
+            <h1 class="animate-right">UOW ROOM BOOKING SYSTEM</h1>
+        </div>
+    </div>
+    <!-- END OF HOMEPAGE BANNER -->
+
+    <section class="student-wrap">
+        <div class="container">
+            <div class="row">
+                <!-- START OF BOOKING -->
+                <div class="booking-info col-md-12">
+                    <div class="booking-section">
+                        <h2>NEW BOOKING: STUDYROOM</h2>
+                            <hr class="divider">
+                            <!-- START OF BOOKING INFO -->   
+                                <div class="booking-info">        
+                                    <div class="room-dropdown">
+                                        <label>Select Room:</label>
+                                            <select class="auditorium-select" id="newa-location">
+                                                <option>Select Room</option>
+                                                    <option value="Auditorium A4.11">Auditorium A4.11</option>
+                                                    <option value="Auditorium A4.12">Auditorium A4.12</option>
+                                                    <option value="Auditorium A5.02">Auditorium A5.02</option>
+                                                    <option value="Auditorium A5.11">Auditorium A5.11</option>
+                                                    <option value="Auditorium A5.12">Auditorium A5.12</option>
+                                            </select>
+                                    </div>
+                                        
+                                    <div class="date-dropdown">
+                                        <label>Select Date:</label>                                   
+                                            <select id="newa-date">
+                                                <option value="25 Jun 2020">Monday    (25 Jun 2020)</option>
+                                                <option value="26 Jun 2020">Tuesday   (26 Jun 2020)</option>
+                                                <option value="27 Jun 2020">Wednesday (27 Jun 2020) </option>
+                                                <option value="28 Jun 2020">Thursday  (28 Jun 2020)</option>
+                                                <option value="29 Jun 2020">Friday    (29 Jun 2020)</option>
+                                            </select>
+                                    </div>
+                                    
+                                    <div class="time-dropdown">
+                                    <label>Select Timing:</label>                                 
+                                        <select id="newa-start">
+                                            <option value="09:00am">09:00 am</option>
+                                            <option value="10:00am">10:00 am</option>
+                                            <option value="11:00am">11:00 am</option>
+                                            <option value="12:00pm">12:00 pm</option>
+                                            <option value="01:00pm">01:00 pm</option>
+                                            <option value="02:00pm">02:00 pm</option>
+                                            <option value="03:00pm">03:00 pm</option>
+                                            <option value="04:00pm">04:00 pm</option>
+                                            <option value="05:00pm">05:00 pm</option>
+                                            <option value="06:00pm">06:00 pm</option>
+                                        </select>
+                                        
+                                    <label>to</label>
+                                        <select id="newa-end">
+                                            <option value="10:00am">10:00 am</option>
+                                            <option value="11:00am">11:00 am</option>
+                                            <option value="12:00pm">12:00 pm</option>
+                                            <option value="01:00pm">01:00 pm</option>
+                                            <option value="02:00pm">02:00 pm</option>
+                                            <option value="03:00pm">03:00 pm</option>
+                                            <option value="04:00pm">04:00 pm</option>
+                                            <option value="05:00pm">05:00 pm</option>
+                                            <option value="06:00pm">06:00 pm</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="booking-confirm">
+                                            <button class="newbooking btn" onclick="location.href='index.html#existing-booking'"><span>Confirm Booking</span></button>
+                                    </div>
+                        </div>                  
+                            <!-- END OF BOOKING INFO -->     
+                            <div class="content">
+                                <div class="cube">
+                                  <figure>
+                                    <figcaption class="cube-caption caption-bottom">
+                                        <a href="INSERT LINK "><h3>Study Room</h3></a>
+                                    </figcaption>
+                                  </figure>
+                                </div>
+                          </div>
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+                         <!-- END OF BOOKING -->                        
+
+    <footer class="text-center py-5">
+        &copy; Copyright © 2020 University of Wollongong.
+    </footer>
+                <!-- START OF SCRIPTS -->
+                <script>
+                    // Schedule
+                    $("#weekly-schedule").dayScheduleSelector({
+                        days: [1, 2, 3, 4, 5], 
+                        startTime:'09:00',
+                        endTime:'19:00', 
+                        interval: 60,  
+                        stringDays: ['Mon','Tue','Wed','Thu','Fri'],
+                        template:'<div class="blocked"></div>'+'<div class="day-schedule-selector">'+
+                        '<table class="schedule-table">'+
+                        '<thead class="schedule-header"></thead>'+
+                        '<tbody class="schedule-rows"></tbody>'+
+                        '</table>'+'<div>'
+                    });
+        
+                    $(document).ready(function() {
+                        // Change Timings based on room selection - Serialize Data (Available Timings)
+                        $("select.auditorium-select").change(function(){
+                            var room = $(this).children("option:selected").val();
+                            if (room == "Auditorium A4.11") {
+                                $("#weekly-schedule").data('artsy.dayScheduleSelector').deserialize({
+                                    '1': [['14:00','16:00']],
+                                    '2': [['11:00','14:00']],
+                                    '4': [['10:00','12:00']], 
+                                    '5': [['09:00','11:00'], ['15:00','18:00']]
+                                });
+                            } else if (room == "Auditorium A4.12") {
+                                $('.time-slot').removeAttr('id');
+                                $("#weekly-schedule").data('artsy.dayScheduleSelector').deserialize({
+                                    '1': [['10:00','12:00']],
+                                    '2': [['11:00','14:00'], ['16:00','19:00']],
+                                    '3': [['15:00','17:00']],
+                                    '4': [['11:00','13:00']], 
+                                    '5': [['09:00','11:00']]
+                                });
+                            } else if (room == "Auditorium A5.02") {
+                                $('.time-slot').removeAttr('id');
+                                $("#weekly-schedule").data('artsy.dayScheduleSelector').deserialize({
+                                    '2': [['13:00','15:00'], ['16:00','19:00']],
+                                    '3': [['11:00','16:00']],
+                                    '5': [['09:00','11:00']]
+                                });
+                            } else if (room == "Auditorium A5.11") {
+                                $('.time-slot').removeAttr('id');
+                                $("#weekly-schedule").data('artsy.dayScheduleSelector').deserialize({
+                                    '1': [['10:00','12:00']],
+                                    '2': [['11:00','14:00'], ['16:00','19:00']],
+                                    '3': [['14:00','16:00']],
+                                    '4': [['10:00','12:00']], 
+                                    '5': [['09:00','11:00'], ['16:00','18:00']]
+                                });
+                            } else if (room == "Auditorium A5.12") {
+                                $('.time-slot').removeAttr('id');
+                                $("#weekly-schedule").data('artsy.dayScheduleSelector').deserialize({
+                                    '2': [['16:00','19:00']],
+                                    '3': [['14:00','16:00']],
+                                    '5': [['09:00','11:00'], ['16:00','18:00']]
+                                });
+                            } else {
+                                $('.time-slot').removeAttr('id');
+                            }
+                        });
+        
+                        // Change to 12-hr format
+                        $('.time-label0').html("09:00am");
+                        $('.time-label4').html("01:00pm");
+                        $('.time-label5').html("02:00pm");
+                        $('.time-label6').html("03:00pm");
+                        $('.time-label7').html("04:00pm");
+                        $('.time-label8').html("05:00pm");
+                        $('.time-label9').html("06:00pm");
+        
+                        // Set price based on room selected
+                        $("select.auditorium-select").change(function(){
+                            var room = $(this).children("option:selected").val();
+                            if (room == "Auditorium A4.11") {
+                                $("#total-amount").html("$43.00");
+                            } else if (room == "Auditorium A4.12") {
+                                $("#total-amount").html("$48.00");
+                            } else if (room == "Auditorium A5.02") {
+                                $("#total-amount").html("$50.00");
+                            } else if (room == "Auditorium A5.11") {
+                                $("#total-amount").html("$46.00");
+                            } else {
+                                $("#total-amount").html("$58.00");
+                            }
+                        });
+        
+                        // local storage
+                        $(".newbooking").click(function(){
+                            var newbookinga_location = $("#newa-location option:selected").val();
+                            localStorage.setItem("newbookinga_location", newbookinga_location);
+        
+                            var newbookinga_date = $("#newa-date option:selected").val();
+                            localStorage.setItem("newbookinga_date", newbookinga_date);
+        
+                            var newbookinga_start = $("#newa-start option:selected").val();
+                            localStorage.setItem("newbookinga_start", newbookinga_start);
+        
+                            var newbookinga_end = $("#newa-end option:selected").val();
+                            localStorage.setItem("newbookinga_end", newbookinga_end);
+                            window.location.href = "index.html";
+                        });
+        
+                        // Apply Promo Code
+                        $("#validate-promo").click(function() {
+                            var srpromo = $("#input-promo").val();
+                            if (srpromo == "10OFF") {
+                                $("#total-amount").html("$40.00");
+                                $("#promo-error").html("<i class='fa fa-check-circle' aria-hidden='true'></i>Promo Code Applied");
+                                $("#promo-error").css("color", "#1fa463");
+                            } else if (srpromo.length == 0) {
+                                $("#promo-error").css("color", "#dc3535");
+                                $("#promo-error").html("<i class='fa fa-exclamation-circle' aria-hidden='true'></i>No promo code entered");
+                            } else {
+                                $("#promo-error").css("color", "#dc3535");
+                                $("#promo-error").html("<i class='fa fa-exclamation-circle' aria-hidden='true'></i>Invalid Promo Code");
+                            }
+                        });
+        
+                        // Remove Promo Code
+                        $("#remove-promo").click(function() {
+                            if ($("#input-promo").val().length != 0) {
+                                $("#total-amount").html("$43.00");
+                                $("#input-promo").val("");
+                                $("#promo-error").html("");
+                            } 
+                        }); 
+                    });
+                </script>
+                <!-- END OF SCRIPTS -->
+</body>
+</html>
