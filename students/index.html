@@ -1,0 +1,904 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>UOW Room Booking System</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/jquery-ui.css">
+    <link rel="stylesheet" href="../css/font-awesome.css" type="text/css" />
+
+    <script src="../js/modernizr-2.8.3.min.js"></script>
+    <script src="../js/jquery-1.12.0.min.js"></script>
+    <script src="../js/plugins.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</head>
+<body>
+    <!-- START OF HEADER SECTION -->
+    <header>
+        <div class="header-wrap">
+            <div class="container">
+                <!-- START OF LOGO -->
+                <div class="flexbox-header">
+                    <div class="image-wrapper">
+                        <img src="../images/uow-logo.png" class="uow-logo">
+                    </div>
+                    <div class="login-wrapper">
+                        <label><span class="logged-in">Logged in as: shinw042@mymail.com</span></label>
+                        <a href="login.php" class="btn"><span>Log out</span></a>
+                    </div>
+                </div>
+                <!-- END OF LOGO -->
+            </div>
+        </div>
+    </header>
+    <!-- END OF HEADER SECTION -->
+
+    <!-- START OF HOMEPAGE BANNER -->
+    <div class="banner-wrap">
+        <img src="../images/banner1.jpeg">
+        <div class="titleheader-wrap">
+            <h2 class="sub-headline">
+                <span class="first-letter">W</span>elcome
+            </h2>
+            <h1>UOW ROOM BOOKING SYSTEM</h1>
+        </div>
+    </div>
+    <!-- END OF HOMEPAGE BANNER -->
+
+    
+    <main>
+    <!--START OF ABOUT SECTION-->
+        <section class="about" id="about">
+            <div class="container">
+                <div class="row align-items-lg-center">
+                    <div class="col-12 col-md-6 text-center text-md-left" data-aos="fade-right">
+                        <div class="section-heading mb-3">
+                            <h4>Learn</h4>
+                            <h1 class="display-4">Our History</h1>
+                        </div>
+                        <p>
+                           Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                           Maiores repudiandae esse, voluptas deserunt nemo quia iure
+                           placeat. Assumenda at itaque voluptatem voluptatibus quod 
+                           molestiae quo, dolorem, fugiat, adipisci dignissimos voluptate.
+                        </p>
+                        <a class="btn mt-4 mb-5 md-mb-0" href="#">Find out more</a>
+                    </div>
+                    <div class="col-12 col-md-6" data-aos="fade-left">
+                        <img class="img-fluid"src="../images/room1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!--END OF ABOUT SECTION-->
+   <!--START OF DETAILS SECTION-->
+    <section class="details" id="details">
+        <div class="container">
+            <div class="row text-center text-white">
+                <div class="col-12 col-md-4 mb-4 mb-md-0 "data-aos="fade-up">
+                    <div class="shop-info">
+                        <i class="far fa-clock mb-3"></i>
+                        <h1 class="mb-4">Hours of operation</h1>
+                        <p>Mon to Fri: 8:00am - 6:00pm</p>
+                        <p>Sat to Sun: 8:00am - 1:00pm</p>
+                    </div>
+                </div>
+           
+                <div class="col-12 col-md-4 mb-4 mb-md-0" data-aos="fade-down">
+                    <div class="shop-info">
+                        <i class="fas fa-map-marked-alt mb-3" ></i>
+                        <h1 class="mb-4">Our location</h1>
+                        <address>1243 Clementi Road <br>
+                        Singapore, st 12234
+                        </address>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-4 mb-md-0" data-aos="fade-up">
+                    <div class="shop-info">
+                        <i class="fas fa-mobile-alt mb-3"></i>
+                        <h1 class="mb-4">Hours of operation</h1>
+                        <p>Phone #: (+65) 1800-5515-5555</p>
+                        <p>Email: contact@uowsim.com</p>
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-5"> 
+        </div>
+
+        <!--START OF WHAT'S AVAILABLE SECTION-->
+        <section class="container-fluid p-0">
+            <div class="section-heading my-5 text-center">
+                <h4 class="text-white">What's Available</h4>
+                <h1 class="display-4">Types of Channel</h1>
+            </div>
+
+            <div class="row no-gutters">
+                <div class="col-12 col-sm-6 col-xl-2 order-sm-1 order-xl-1" >
+                    <img class="img-fluid" src="../images/r6.jpg" alt="">
+                </div>
+                <div class="col-12 col-sm-6 col-xl-2 order-sm-2 order-xl-2 booking">
+                    <div class="details-item-desc">
+                        <h1>The <br>Auditorium</h1>
+                        <a href="new-booking-audi.html" class="btn mt-3 d-none d-xl-block">Book Now</a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-xl-2 order-sm-4 order-xl-3">
+                    <img class="img-fluid" src="../images/r5.jpg" alt="">
+                </div>
+                <div class="col-12 col-sm-6 col-xl-2 order-sm-3 order-xl-4 booking">
+                    <div class="details-item-desc">
+                        <h1>The <br>Discussion Room</h1>
+                        <a href="#" class="btn mt-3 d-none d-xl-block">Book Now</a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-xl-2 order-sm-5 order-xl-5">
+                    <img class="img-fluid" src="../images/r4.jpg" alt="">
+                </div>
+                <div class="col-12 col-sm-6 col-xl-2 order-sm-6 order-xl-6 booking">
+                    <div class="details-item-desc">
+                        <h1>The <br>Study Room</h1>
+                        <a href="#" class="btn mt-3 d-none d-xl-block">Book Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row no-gutters">
+                <div class="col-12 col-sm-6 col-xl-2 order-sm-2 order-xl-2">
+                    <img class="img-fluid" src="../images/r3.jpg" alt="">
+                </div>
+                <div class="col-12 col-sm-6 col-xl-2 order-sm-1 order-xl-1 booking">
+                    <div class="details-item-desc">
+                        <h1>The <br>Tutorial Room</h1>
+                        <a href="#" class="btn mt-3 d-none d-xl-block">Book Now</a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-xl-2 order-sm-3 order-xl-4">
+                    <img class="img-fluid" src="../images/r2.jpg" alt="">
+                </div>
+                <div class="col-12 col-sm-6 col-xl-2 order-sm-5 order-xl-3 booking">
+                    <div class="details-item-desc">                     
+                        <h1>The<br> Lecture Theatre</h1>
+                        <a href="#" class="btn mt-3 d-none d-xl-block">Book Now</a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-xl-2 order-sm-6 order-xl-6">
+                    <img class="img-fluid" src="../images/r1.jpg" alt="">
+                </div>
+                <div class="col-12 col-sm-6 col-xl-2 order-sm-5 order-xl-5 booking">
+                    <div class="details-item-desc">              
+                        <h1>The <br>Conference Room</h1>
+                        <a href="#" class="btn mt-3 d-none d-xl-block">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--END OF WHAT'S AVAILABLE SECTION-->
+    </section>
+     <!--END OF DETAILS SECTION-->
+
+     <section class="existing-booking">
+         <div class="container">
+             <h2>Current Booking</h2>
+             <hr class="divider">
+                <div class="col-md-12" id="existing-booking">
+                <!-- DISPLAY MSG TO CONFIRM CANCELLATION OF THE ROOM -->
+                <p id="display-msg"></p>
+
+                <table style="width:100%" id="bookingtable">
+                    <tr>
+                        <th>Date</th>
+                        <th>Timing</th> 
+                        <th>Booking ID</th>
+                        <th>Location</th>
+                        <th></th>
+                    </tr>
+                    <!-- BOOKING 1 -->
+                    <tr id="student-booking1">
+                        <td id="editbooking1_date">08 Jun 2020</td>
+                        <td><span id="editbooking1_start">10:00am</span> - <span id="editbooking1_end">12:00pm</span></td>
+                        <td>BLT01298</td>
+                        <td>Lecture Hall L4.11</td>
+                        <td class="centered">
+                            <a data-toggle="modal" data-target="#booking-details1">View Details</a> | <a href="booking1.html">Modify</a> | <a onclick="cancelBooking1()">Cancel</a>
+                        </td>
+                    </tr>
+                    <!-- BOOKING 2 -->
+                    <tr id="student-booking2">
+                        <td id="editbooking2_date">12 Jun 2020</td>
+                        <td><span id="editbooking2_start">11:00am</span> - <span id="editbooking2_end">01:00pm</span></td>
+                        <td>BSR22365</td>
+                        <td>Study Room L5.02</td>
+                        <td class="centered">
+                            <a data-toggle="modal" data-target="#booking-details2">View Details</a> | <a href="booking2.html" style="color:#eee;">Modify</a> | <a onclick="cancelBooking2()">Cancel</a>
+                        </td>
+                    </tr>
+                    <!-- NEW BOOKING - STUDY ROOM -->
+                    <tr id="student-booking3" class="hidden">
+                        <td id="newbooking_date"></td>
+                        <td><span id="newbooking_start"></span> - <span id="newbooking_end"></span></td>
+                        <td>BSR22412</td>
+                        <td id="newbooking_location"></td>
+                        <td class="centered">
+                            <a data-toggle="modal" data-target="#booking-details3">View Details</a> | <a href="booking3.html">Modify</a> | <a onclick="cancelBooking3()">Cancel</a>
+                        </td>
+                    </tr>
+                    <!-- NEW BOOKING - LECTURE HALL -->
+                    <tr id="student-booking4" class="hidden">
+                        <td id="newbookinglh_date"></td>
+                        <td><span id="newbookinglh_start"></span> - <span id="newbookinglh_end"></span></td>
+                        <td>BLT01306</td>
+                        <td id="newbookinglh_location"></td>
+                        <td class="centered">
+                            <a data-toggle="modal" data-target="#booking-details4">View Details</a> | <a href="booking4.html" style="color:#eee;">Modify</a> | <a onclick="cancelBooking4()">Cancel</a>
+                        </td>
+                    </tr>
+                    <!-- NEW BOOKING - AUDITORIUM -->
+                    <tr id="student-booking5" class="hidden">
+                        <td id="newbookinga_date"></td>
+                        <td><span id="newbookinga_start"></span> - <span id="newbookinga_end"></span></td>
+                        <td>BAU00109</td>
+                        <td id="newbookinga_location"></td>
+                        <td class="centered">
+                            <a data-toggle="modal" data-target="#booking-details5">View Details</a> | <a href="booking5.html">Modify</a> | <a onclick="cancelBooking5()">Cancel</a>
+                        </td>
+                    </tr>
+
+                </table>
+
+                <!-- START OF MODAL POPUP - BOOKING 1 -->
+                <div id="booking-details1" class="modal fade booking-modal" role="dialog">
+                    <div class="modal-dialog">
+                      <!-- Modal content-->
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          
+                          <h1>BOOKING ID: BLT01298</h1>
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">        
+                            <div class="modal-group">
+                                <div><b>Booked By:</b></div> 
+                                <div>student01</div>
+                            </div>                                                       
+                            <div class="modal-group">
+                                <div><b>Date:</b></div> 
+                                <div id="editbooking1_date_md">08 Jun 2020</div>
+                            </div>
+                            <div class="modal-group">
+                                <div><b>Timing Booked:</b></div> 
+                                <div>
+                                    <span id="editbooking1_start_md">10:00am</span> - <span id="editbooking1_end_md">12:00pm</span>
+                                </div>
+                            </div>
+                            <div class="modal-group">
+                                <div><b>Room Category:</b></div>
+                                <div>Lecture Hall</div>
+                            </div>
+                            <div class="modal-group">
+                                <div><b>Room Location:</b></div> 
+                                <div>Lecture Hall L4.11</div>
+                            </div>
+                            <div class="modal-group">
+                                <div><b>Room Capacity:</b></div> 
+                                <div>150</div>
+                            </div>
+                            <h2>Payment Details</h2>
+                            <div class="h-divider"></div>
+                            <div class="modal-group">
+                                <div><b>Payment by:</b></div>
+                                <div>Credit Card</div>
+                            </div>
+                            <div class="modal-group">
+                                <div><b>Promo Code:</b></div>
+                                <div>10OFF</div>
+                            </div>
+                            <div class="modal-group">
+                                <div><b>Discounts:</b></div>
+                                <div>$5.00</div>
+                            </div>
+                            <div class="modal-group">
+                                <div><b>Total Amount:</b></div>
+                                <div>$51.00</div>
+                            </div>
+                       </div>
+                        <div class="modal-footer">
+                          <button type="button" class="receipt"><i class="fa fa-file-text"></i> DOWNLOAD RECEIPT</button>
+                        </div>
+                      </div>
+                </div>
+                 </div>
+                <!-- END OF MODAL POPUP - BOOKING 1 -->
+
+                <!-- START OF MODAL POPUP - BOOKING 2 -->
+                <div id="booking-details2" class="modal fade booking-modal" role="dialog">
+                    <div class="modal-dialog">
+                      <!-- Modal content-->
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          
+                          <h1>BOOKING ID: BLT01298</h1>
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">        
+                            <div class="modal-group">
+                                <div><b>Booked By:</b></div> 
+                                <div>student01</div>
+                            </div>                                                       
+                            <div class="modal-group">
+                                <div><b>Date:</b></div> 
+                                <div id="editbooking2_date_md">08 Jun 2020</div>
+                            </div>
+                            <div class="modal-group">
+                                <div><b>Timing Booked:</b></div> 
+                                <div>
+                                    <span id="editbooking2_start_md">10:00am</span> - <span id="editbooking1_end_md">12:00pm</span>
+                                </div>
+                            </div>
+                            <div class="modal-group">
+                                <div><b>Room Category:</b></div>
+                                <div>Study Room</div>
+                            </div>
+                            <div class="modal-group">
+                                <div><b>Room Location:</b></div> 
+                                <div>Study Room L6.11</div>
+                            </div>
+                            <div class="modal-group">
+                                <div><b>Room Capacity:</b></div> 
+                                <div>150</div>
+                            </div>
+                            <h2>Payment Details</h2>
+                            <div class="h-divider"></div>
+                            <div class="modal-group">
+                                <div><b>Payment by:</b></div>
+                                <div>Credit Card</div>
+                            </div>
+                            <div class="modal-group">
+                                <div><b>Promo Code:</b></div>
+                                <div>10OFF</div>
+                            </div>
+                            <div class="modal-group">
+                                <div><b>Discounts:</b></div>
+                                <div>$5.00</div>
+                            </div>
+                            <div class="modal-group">
+                                <div><b>Total Amount:</b></div>
+                                <div>$51.00</div>
+                            </div>
+                       </div>
+                        <div class="modal-footer">
+                          <button type="button" class="receipt"><i class="fa fa-file-text"></i> DOWNLOAD RECEIPT</button>
+                        </div>
+                      </div>
+                </div>
+                 </div>
+                <!-- END OF MODAL POPUP - BOOKING 2 -->
+
+                <!-- START OF MODAL POPUP - NEW BOOKING - STUDY ROOM -->
+                <div id="booking-details3" class="modal fade booking-modal" role="dialog">
+                    <div class="modal-dialog">
+                      <!-- Modal content-->
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          
+                          <h1>BOOKING ID: BSR22412</h1>
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">        
+                            <div class="modal-group">
+                                <div><b>Booked By:</b></div> 
+                                <div>student01</div>
+                            </div>                                                       
+                            <div class="modal-group">
+                                <div><b>Date:</b></div> 
+                                <div id="newbooking_date_md"></div>
+                            </div>
+                            <div class="modal-group">
+                                <div><b>Timing Booked:</b></div> 
+                                <div>
+                                    <span id="newbooking_start_md"></span> - <span id="newbooking_end_md"></span>
+                                </div>
+                            </div>
+                            <div class="modal-group">
+                                <div><b>Room Category:</b></div>
+                                <div>Study Room</div>
+                            </div>
+                            <div class="modal-group">
+                                <div><b>Room Location:</b></div> 
+                                <div><span id="newbooking_location_md"></span></div>
+                            </div>
+                            <div class="modal-group">
+                                <div><b>Room Capacity:</b></div> 
+                                <div>150</div>
+                            </div>
+                            <h2>Payment Details</h2>
+                            <div class="h-divider"></div>
+                            <div class="modal-group">
+                                <div><b>Payment by:</b></div>
+                                <div>Credit Card</div>
+                            </div>
+                            <div class="modal-group">
+                                <div><b>Promo Code:</b></div>
+                                <div>10OFF</div>
+                            </div>
+                            <div class="modal-group">
+                                <div><b>Discounts:</b></div>
+                                <div>$5.00</div>
+                            </div>
+                            <div class="modal-group">
+                                <div><b>Total Amount:</b></div>
+                                <div>$51.00</div>
+                            </div>
+                       </div>
+                        <div class="modal-footer">
+                          <button type="button" class="receipt"><i class="fa fa-file-text"></i> DOWNLOAD RECEIPT</button>
+                        </div>
+                      </div>
+                </div>
+                 </div>
+                <!-- END OF MODAL POPUP - NEW BOOKING - STUDY ROOM -->
+
+                <!-- START OF MODAL POPUP - NEW BOOKING - LECTURE HALL -->
+                <div id="booking-details4" class="modal fade booking-modal" role="dialog">
+                    <div class="modal-dialog">
+                      <!-- Modal content-->
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          
+                          <h1>BOOKING ID: BLT01298</h1>
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">        
+                            <div class="modal-group">
+                                <div><b>Booked By:</b></div> 
+                                <div>student01</div>
+                            </div>                                                       
+                            <div class="modal-group">
+                                <div><b>Date:</b></div> 
+                                <div id="newbookinglh_date_md"></div>
+                            </div>
+                            <div class="modal-group">
+                                <div><b>Timing Booked:</b></div> 
+                                <div>
+                                    <span id="newbookinglh_start_md"></span> - <span id="newbookinglh_end_md"></span>
+                                </div>
+                            </div>
+                            <div class="modal-group">
+                                <div><b>Room Category:</b></div>
+                                <div>Lecture Hall</div>
+                            </div>
+                            <div class="modal-group">
+                                <div><b>Room Location:</b></div> 
+                                <div><span id="newbookinglh_location_md"></span></div>
+                            </div>
+                            <div class="modal-group">
+                                <div><b>Room Capacity:</b></div> 
+                                <div>120</div>
+                            </div>
+                            <h2>Payment Details</h2>
+                            <div class="h-divider"></div>
+                            <div class="modal-group">
+                                <div><b>Payment by:</b></div>
+                                <div>Credit Card</div>
+                            </div>
+                            <div class="modal-group">
+                                <div><b>Promo Code:</b></div>
+                                <div>10OFF</div>
+                            </div>
+                            <div class="modal-group">
+                                <div><b>Discounts:</b></div>
+                                <div>$5.00</div>
+                            </div>
+                            <div class="modal-group">
+                                <div><b>Total Amount:</b></div>
+                                <div>$51.00</div>
+                            </div>
+                       </div>
+                        <div class="modal-footer">
+                          <button type="button" class="receipt"><i class="fa fa-file-text"></i> DOWNLOAD RECEIPT</button>
+                        </div>
+                      </div>
+                </div>
+                 </div>
+                <!-- END OF MODAL POPUP - NEW BOOKING - LECTURE HALL -->
+
+                <!-- START OF MODAL POPUP - NEW BOOKING - AUDITORIUM -->
+                <div id="booking-details5" class="modal fade booking-modal" role="dialog">
+                    <div class="modal-dialog">
+                      <!-- Modal content-->
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          
+                          <h1>BOOKING ID: BLT01298</h1>
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">        
+                            <div class="modal-group">
+                                <div><b>Booked By:</b></div> 
+                                <div>student01</div>
+                            </div>                                                       
+                            <div class="modal-group">
+                                <div><b>Date:</b></div> 
+                                <div id="newbookinga_date_md"></div>
+                            </div>
+                            <div class="modal-group">
+                                <div><b>Timing Booked:</b></div> 
+                                <div>
+                                    <span id="newbookinga_start_md"></span> - <span id="newbookinga_end_md"></span>
+                                </div>
+                            </div>
+                            <div class="modal-group">
+                                <div><b>Room Category:</b></div>
+                                <div>Auditorium</div>
+                            </div>
+                            <div class="modal-group">
+                                <div><b>Room Location:</b></div> 
+                                <div><span id="newbookinga_location_md"></span></div>
+                            </div>
+                            <div class="modal-group">
+                                <div><b>Room Capacity:</b></div> 
+                                <div>150</div>
+                            </div>
+                            <h2>Payment Details</h2>
+                            <div class="h-divider"></div>
+                            <div class="modal-group">
+                                <div><b>Payment by:</b></div>
+                                <div>Credit Card</div>
+                            </div>
+                            <div class="modal-group">
+                                <div><b>Promo Code:</b></div>
+                                <div>10OFF</div>
+                            </div>
+                            <div class="modal-group">
+                                <div><b>Discounts:</b></div>
+                                <div>$5.00</div>
+                            </div>
+                            <div class="modal-group">
+                                <div><b>Total Amount:</b></div>
+                                <div>$51.00</div>
+                            </div>
+                       </div>
+                        <div class="modal-footer">
+                          <button type="button" class="receipt"><i class="fa fa-file-text"></i> DOWNLOAD RECEIPT</button>
+                        </div>
+                      </div>
+                </div>
+                 </div>
+                <!-- END OF MODAL POPUP - NEW BOOKING - AUDITORIUM -->
+
+            </div>
+         </div>
+     </section>
+     
+     
+   
+    <!--START OF ACHIEVEMENTS SECTION-->
+    <section class="achievements">
+        <div class="container">
+            <div class="section-heading my-5 text-center">
+                <h1 class="display-4">Our Achievements</h1>
+            </div>
+            <div class="row text-center">
+                <div class="col-12 col-md-4" data-aos="fade-right">
+                    <img class="img-fluid" src="../images/core1.png" alt="">
+                    <div class="card-body">
+                        <h1>Top 500 School in Europe</h1>
+                        <h6>No. 13 in Business Field</h6>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4" data-aos="fade-up">
+                    <img class="img-fluid" src="../images/core1.png" alt="">
+                    <div class="card-body">
+                        <h1>Best in Academic</h1>
+                        <h6>More than 200 Scholarship per year</h6>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4" data-aos="fade-left">
+                    <img class="img-fluid" src="../images/core1.png" alt="">
+                    <div class="card-body">
+                        <h1>Top 20 in Regional FootBall tournament</h1>
+                        <h6>Highly Prestige Coach in our School</h6>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--END OF ACHIEVEMENTS SECTION-->
+    <footer class="text-center py-5">
+        &copy; Copyright © 2020 University of Wollongong.
+    </footer>
+    </main>
+     <!-- START OF SCRIPTS -->
+     <script>
+        // remove booking
+        function removebk() {
+            $("#bookingtable").addClass("remove-booking");
+            $(".footer-wrap").css("margin-top", "30px");
+            $("#display-msg").css("color", "#0c2340");
+        }
+
+        // Cancel Booking1
+        function cancelBooking1() 
+        {
+            var txt;
+            if (confirm("Please confirm the cancellation of this booking.")) {
+                var element = document.getElementById("student-booking1");
+                element.className += "remove-booking";
+                $("#display-msg").css("margin-bottom", "30px");
+                txt = "Your Booking is Cancelled. You will receive an email regarding refund within a few hours.";
+
+                // check if booking2,3 is removed, remove table header
+                if($("#student-booking2").hasClass("remove-booking") && $("#student-booking3").hasClass("remove-booking")){
+                    removebk();
+                    txt = "You do not have any bookings at the moment.";
+                // check if booking 1,2 is removed, remove table header
+                } else if ($("#student-booking1").hasClass("remove-booking") && $("#student-booking2").hasClass("remove-booking") ) {
+                    removebk();
+                    txt = "You do not have any bookings at the moment.";
+                // check if booking 2,3,4 is removed, remove table header
+                } else if ($("#student-booking2").hasClass("remove-booking") && $("#student-booking3").hasClass("remove-booking") && 
+                $("#student-booking4").hasClass("remove-booking")) {
+                    removebk();
+                    txt = "You do not have any bookings at the moment.";
+                // check if booking2,3,4,5 is removed, remove table header
+                } else if ($("#student-booking2").hasClass("remove-booking") && $("#student-booking3").hasClass("remove-booking") && 
+                $("#student-booking4").hasClass("remove-booking") && $("#student-booking5").hasClass("remove-booking")) {
+                    removebk();
+                    txt = "You do not have any bookings at the moment.";
+                }
+            } else {
+                txt = "Your Booking is not cancelled";
+            }
+            document.getElementById("display-msg").innerHTML = txt;
+        }
+
+        // Cancel Booking2
+        function cancelBooking2() 
+        {
+            var txt;
+            if (confirm("Please confirm the cancellation of this booking.")) {
+                var element = document.getElementById("student-booking2");
+                element.className += "remove-booking";
+                $("#display-msg").css("margin-bottom", "30px");
+                txt = "Your Booking is Cancelled. You will receive an email regarding refund within a few hours.";
+
+                // check if booking1,3 is removed, remove table header
+                if($("#student-booking1").hasClass("remove-booking") && $("#student-booking3").hasClass("remove-booking")){
+                    removebk();
+                    txt = "You do not have any bookings at the moment.";
+                // check if booking 1 is removed, booking 3 exists, remove table header
+                } else if ($("#student-booking1").hasClass("remove-booking") && $("#student-booking2").hasClass("remove-booking") && 
+                $("#student-booking3").attr("index") != "newbk") {
+                    //console.log("ITEM 3 DOES NOT EXIST");
+                    removebk();
+                    txt = "You do not have any bookings at the moment.";
+                // check if booking 1,3,4 is removed, remove table header
+                } else if ($("#student-booking1").hasClass("remove-booking") && $("#student-booking3").hasClass("remove-booking") && 
+                $("#student-booking4").hasClass("remove-booking")) {
+                    removebk();
+                    txt = "You do not have any bookings at the moment.";
+                // check if booking1,3,4,5 is removed, remove table header
+                } else if ($("#student-booking1").hasClass("remove-booking") && $("#student-booking3").hasClass("remove-booking") && 
+                $("#student-booking4").hasClass("remove-booking") && $("#student-booking5").hasClass("remove-booking")) {
+                    removebk();
+                    txt = "You do not have any bookings at the moment.";
+                }
+            } else {
+                txt = "Your Booking is not cancelled";
+            }
+            document.getElementById("display-msg").innerHTML = txt;
+        }
+
+        // Cancel Booking3
+        function cancelBooking3() 
+        {
+            var txt;
+            if (confirm("Please confirm the cancellation of this booking.")) {
+                var element = document.getElementById("student-booking3");
+                element.className += "remove-booking";
+                $("#display-msg").css("margin-bottom", "30px");
+                txt = "Your Booking is Cancelled. You will receive an email regarding refund within a few hours.";
+
+                // check if booking1,2,4 is removed, remove table header
+                if ($("#student-booking1").hasClass("remove-booking") && $("#student-booking2").hasClass("remove-booking") && 
+                $("#student-booking4").hasClass("remove-booking")) {
+                    removebk();
+                    txt = "You do not have any bookings at the moment.";
+                // check if booking 1,2 is removed, if booking 3 exists, remove table header
+                } else if ($("#student-booking1").hasClass("remove-booking") && $("#student-booking2").hasClass("remove-booking") && 
+                $("#student-booking3").attr("index") == "newbk" && $("#student-booking4").attr("index") != "newbk") {
+                    removebk();
+                    txt = "You do not have any bookings at the moment.";
+                // check if booking1,2,4,5 is removed, remove table header
+                } else if ($("#student-booking1").hasClass("remove-booking") && $("#student-booking2").hasClass("remove-booking") && 
+                $("#student-booking4").hasClass("remove-booking") && $("#student-booking5").hasClass("remove-booking")) {
+                    removebk();
+                    txt = "You do not have any bookings at the moment.";
+                }
+            } else {
+                txt = "Your Booking is not cancelled";
+            }
+            document.getElementById("display-msg").innerHTML = txt;
+        }
+
+        // Cancel Booking4
+        function cancelBooking4() 
+        {
+            var txt;
+            if (confirm("Please confirm the cancellation of this booking.")) {
+                var element = document.getElementById("student-booking4");
+                element.className += "remove-booking";
+                $("#display-msg").css("margin-bottom", "30px");
+                txt = "Your Booking is Cancelled. You will receive an email regarding refund within a few hours.";
+
+                // check if booking1,2,3 is removed, remove table header
+                if ($("#student-booking1").hasClass("remove-booking") && $("#student-booking2").hasClass("remove-booking") && 
+                $("#student-booking3").hasClass("remove-booking") && $("#student-booking4").attr("index") == "newbk" && $("#student-booking5").attr("index") != "newbk") {
+                    removebk();
+                    txt = "You do not have any bookings at the moment.";
+                // check if booking1,2,3,5 is removed, remove table header
+                } else if ($("#student-booking1").hasClass("remove-booking") && $("#student-booking2").hasClass("remove-booking") && 
+                $("#student-booking3").hasClass("remove-booking") && $("#student-booking5").hasClass("remove-booking")) {
+                    removebk();
+                    txt = "You do not have any bookings at the moment.";
+                }
+            } else {
+                txt = "Your Booking is not cancelled";
+            }
+            document.getElementById("display-msg").innerHTML = txt;
+        }
+
+        // Cancel Booking5
+        function cancelBooking5() 
+        {
+            var txt;
+            if (confirm("Please confirm the cancellation of this booking.")) {
+                var element = document.getElementById("student-booking5");
+                element.className += "remove-booking";
+                $("#display-msg").css("margin-bottom", "30px");
+                txt = "Your Booking is Cancelled. You will receive an email regarding refund within a few hours.";
+
+                 // check if booking1,2,3 is removed, remove table header
+                if ($("#student-booking1").hasClass("remove-booking") && $("#student-booking2").hasClass("remove-booking") && 
+                $("#student-booking3").hasClass("remove-booking") && $("#student-booking4").hasClass("remove-booking") && 
+                $("#student-booking4").attr("index") == "newbk") {
+                    removebk();
+                    txt = "You do not have any bookings at the moment.";
+                // check if booking1,2,3,4 is removed, remove table header
+                } else if ($("#student-booking1").hasClass("remove-booking") && $("#student-booking2").hasClass("remove-booking") && 
+                $("#student-booking3").hasClass("remove-booking") && $("#student-booking4").hasClass("remove-booking")) {
+                    removebk();
+                    txt = "You do not have any bookings at the moment.";
+                }
+            } else {
+                txt = "Your Booking is not cancelled";
+            }
+            document.getElementById("display-msg").innerHTML = txt;
+        }
+
+        // local storage
+        $(document).ready(function() {
+            // booking 1
+            if (localStorage.getItem("editbooking1_date") != null) {
+                $('#editbooking1_date').html(localStorage.getItem("editbooking1_date"));
+                $('#editbooking1_date_md').html(localStorage.getItem("editbooking1_date"));
+            }
+            if (localStorage.getItem("editbooking1_start") != null) {
+                $('#editbooking1_start').html(localStorage.getItem("editbooking1_start"));
+                $('#editbooking1_start_md').html(localStorage.getItem("editbooking1_start"));
+            }
+            if (localStorage.getItem("editbooking1_end") != null) {
+                $('#editbooking1_end').html(localStorage.getItem("editbooking1_end"));
+                $('#editbooking1_end_md').html(localStorage.getItem("editbooking1_end"));
+            }
+
+            // booking 2
+            if (localStorage.getItem("editbooking2_date") != null) {
+                $('#editbooking2_date').html(localStorage.getItem("editbooking2_date"));
+                $('#editbooking2_date_md').html(localStorage.getItem("editbooking2_date"));
+            }
+            if (localStorage.getItem("editbooking2_start") != null) {
+                $('#editbooking2_start').html(localStorage.getItem("editbooking2_start"));
+                $('#editbooking2_start_md').html(localStorage.getItem("editbooking2_start"));
+            }
+            if (localStorage.getItem("editbooking2_end") != null) {
+                $('#editbooking2_end').html(localStorage.getItem("editbooking2_end"));
+                $('#editbooking2_end_md').html(localStorage.getItem("editbooking2_end"));
+            }
+
+            // new booking - study room
+            $('#newbooking_location').html(localStorage.getItem("newbooking_location"));
+            $('#newbooking_location_md').html(localStorage.getItem("newbooking_location"));
+
+            $('#newbooking_date').html(localStorage.getItem("newbooking_date"));
+            $('#newbooking_date_md').html(localStorage.getItem("newbooking_date"));
+
+            $('#newbooking_start').html(localStorage.getItem("newbooking_start"));
+            $('#newbooking_start_md').html(localStorage.getItem("newbooking_start"));
+
+            $('#newbooking_end').html(localStorage.getItem("newbooking_end"));
+            $('#newbooking_end_md').html(localStorage.getItem("newbooking_end"));
+
+            if(localStorage.getItem("newbooking_location") == null && localStorage.getItem("newbooking_date") == null 
+              && localStorage.getItem("newbooking_start") == null && localStorage.getItem("newbooking_end") == null) {
+                $("#student-booking3").addClass("hidden");
+            } else if (localStorage.getItem("newbooking_location") != "" && localStorage.getItem("newbooking_date") != "" 
+              && localStorage.getItem("newbooking_start") != "" && localStorage.getItem("newbooking_end") != ""){
+                $("#student-booking3").removeClass("hidden"); 
+                $("#student-booking3").attr("index", "newbk");
+            } else {
+            }
+
+            // new booking - lecture hall
+            $('#newbookinglh_location').html(localStorage.getItem("newbookinglh_location"));
+            $('#newbookinglh_location_md').html(localStorage.getItem("newbookinglh_location"));
+
+            $('#newbookinglh_date').html(localStorage.getItem("newbookinglh_date"));
+            $('#newbookinglh_date_md').html(localStorage.getItem("newbookinglh_date"));
+
+            $('#newbookinglh_start').html(localStorage.getItem("newbookinglh_start"));
+            $('#newbookinglh_start_md').html(localStorage.getItem("newbookinglh_start"));
+
+            $('#newbookinglh_end').html(localStorage.getItem("newbookinglh_end"));
+            $('#newbookinglh_end_md').html(localStorage.getItem("newbookinglh_end"));
+
+            if(localStorage.getItem("newbookinglh_location") == null && localStorage.getItem("newbookinglh_date") == null 
+              && localStorage.getItem("newbookinglh_start") == null && localStorage.getItem("newbookinglh_end") == null) {
+                $("#student-booking4").addClass("hidden");
+            } else if (localStorage.getItem("newbookinglh_location") != "" && localStorage.getItem("newbookinglh_date") != "" 
+              && localStorage.getItem("newbookinglh_start") != "" && localStorage.getItem("newbookinglh_end") != ""){
+                $("#student-booking4").removeClass("hidden"); 
+                $("#student-booking4").attr("index", "newbk");
+            } else {
+            }
+
+            // new booking - auditorium
+            $('#newbookinga_location').html(localStorage.getItem("newbookinga_location"));
+            $('#newbookinga_location_md').html(localStorage.getItem("newbookinga_location"));
+
+            $('#newbookinga_date').html(localStorage.getItem("newbookinga_date"));
+            $('#newbookinga_date_md').html(localStorage.getItem("newbookinga_date"));
+
+            $('#newbookinga_start').html(localStorage.getItem("newbookinga_start"));
+            $('#newbookinga_start_md').html(localStorage.getItem("newbookinga_start"));
+
+            $('#newbookinga_end').html(localStorage.getItem("newbookinga_end"));
+            $('#newbookinga_end_md').html(localStorage.getItem("newbookinga_end"));
+
+            if(localStorage.getItem("newbookinga_location") == null && localStorage.getItem("newbookinga_date") == null 
+              && localStorage.getItem("newbookinga_start") == null && localStorage.getItem("newbookinga_end") == null) {
+                $("#student-booking5").addClass("hidden");
+            } else if (localStorage.getItem("newbookinga_location") != "" && localStorage.getItem("newbookinga_date") != "" 
+              && localStorage.getItem("newbookinga_start") != "" && localStorage.getItem("newbookinga_end") != ""){
+                $("#student-booking5").removeClass("hidden"); 
+                $("#student-booking5").attr("index", "newbk");
+            } else {
+            }
+        });
+
+		</script>
+        <!-- END OF SCRIPTS -->
+    <script src="https://kit.fontawesome.com/ba33ab971e.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/main.js" type="text/javascript"></script>
+</body>
+</html>

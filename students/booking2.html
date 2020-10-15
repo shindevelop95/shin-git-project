@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>UOW Room Booking System</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/jquery-ui.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/font-awesome.css" type="text/css" />
+
+    <script src="../js/modernizr-2.8.3.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery-1.12.0.min.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+    <script src="../js/plugins.js"></script>
+    <script src="../js/schedule.js"></script>
+    
+</head>
+<body>
+    <header>
+        <div class="header-wrap">
+            <div class="container">
+                <!-- START OF LOGO -->
+                <div class="flexbox-header">
+                    <div class="image-wrapper">
+                        <img src="../images/uow-logo.png" class="uow-logo">
+                    </div>
+                    <div class="login-wrapper">
+                        <label><span class="logged-in">Logged in as: shinw042@mymail.com</span></label>
+                        <a href="login.php" class="btn"><span>Log out</span></a>
+                    </div>
+                </div>
+                <!-- END OF LOGO -->
+            </div>
+        </div>
+    </header>
+    <!-- END OF NAVIGATION -->
+
+    <!-- START OF HOMEPAGE BANNER -->
+    <div class="banner-wrap">
+        <img src="../images/banner1.jpeg">
+        <div class="titleheader-wrap">
+            <h2 class="sub-headline">
+                <span class="first-letter">W</span>elcome
+            </h2>
+            <h1 class="animate-right">UOW ROOM BOOKING SYSTEM</h1>
+        </div>
+    </div>
+    <!-- END OF HOMEPAGE BANNER -->
+
+    <section class="student-wrap">
+            	<div class="container">
+                	<div class="row">
+                      <!-- START OF MODIFY BOOKING -->
+                        <div class="booking-info col-md-12">
+                            <div class="booking-section">
+                                <h2>MODIFY BOOKING: BLT01298</h2>
+                                    <hr class="divider">
+
+                                    <!-- START OF BOOKING INFO -->   
+                                    <div class="booking-info">
+                                        <label>Room Booked: &nbsp;&nbsp;&nbsp;<span>Lecture Hall L4.11</span></label>
+                                        
+                                        <div class="date-dropdown">
+                                            <label>Select Date:</label>                                   
+                                                <select id="modify-date2">
+                                                    <option>Monday    (11 Nov 2020)</option>
+                                                    <option>Tuesday   (12 Nov 2020)</option>
+                                                    <option>Wednesday (13 Nov 2020) </option>
+                                                    <option>Thursday  (14 Nov 2020)</option>
+                                                    <option>Friday    (15 Nov 2020)</option>
+                                                </select>
+                                        </div>
+                                    
+                                        <div class="time-dropdown">
+                                        <label>Select Timing:</label>                                 
+                                                <select id="modify-start2">
+                                                    <option>09:00 am</option>
+                                                    <option>10:00 am</option>
+                                                    <option>11:00 am</option>
+                                                    <option>12:00 pm</option>
+                                                    <option>01:00 pm</option>
+                                                    <option>02:00 pm</option>
+                                                    <option>03:00 pm</option>
+                                                    <option>04:00 pm</option>
+                                                    <option>05:00 pm</option>
+                                                    <option>06:00 pm</option>
+                                                </select>
+                                        
+                                        <label>to</label>
+                                                <select id="modify-end2">
+                                                    <option>10:00 am</option>
+                                                    <option>11:00 am</option>
+                                                    <option>12:00 pm</option>
+                                                    <option>01:00 pm</option>
+                                                    <option>02:00 pm</option>
+                                                    <option>03:00 pm</option>
+                                                    <option>04:00 pm</option>
+                                                    <option>05:00 pm</option>
+                                                    <option>06:00 pm</option>
+                                                </select>
+                                        </div>
+                                        <div class="booking-confirm">
+                                            <button class="modifybooking btn"><span>Modify Booking</span></button>
+                                        </div>
+                                    </div>                  
+                                    <!-- END OF BOOKING INFO -->           
+                            </div>
+                            
+                                    <!-- START OF AVAILABLE TIMINGS -->
+                                    <h3>Available Timings</h3>
+                                    <div id="weekly-schedule"></div>
+                                    <br>
+                                    <!-- END OF AVAILABLE TIMINGS -->
+                        </div>
+                	</div>
+                         <!-- END OF MODIFY BOOKING -->                        
+                 </div>
+    </section>
+    <footer class="text-center py-5">
+        &copy; Copyright © 2020 University of Wollongong.
+    </footer>
+         <!-- START OF SCRIPTS -->
+        <script>
+            // Schedule
+            $("#weekly-schedule").dayScheduleSelector({
+                days: [1, 2, 3, 4, 5], 
+                startTime:'09:00',
+                endTime:'19:00', 
+                interval: 60,  
+                stringDays: ['Mon','Tue','Wed','Thu','Fri'],
+                template:'<div class="blocked"></div>'+'<div class="day-schedule-selector">'+
+                '<table class="schedule-table">'+
+                '<thead class="schedule-header"></thead>'+
+                '<tbody class="schedule-rows"></tbody>'+
+                '</table>'+'<div>'
+            });
+
+            // Serialize Data (Available Timings)
+            $("#weekly-schedule").data('artsy.dayScheduleSelector').deserialize({
+                '1': [['09:00','12:00'], ['13:00','16:00']],
+                '2': [['11:00','14:00'], ['16:00','19:00']],
+                '3': [['14:00','16:00']],
+                '4': [['09:00','11:00']], 
+                '5': [['09:00','11:00'], ['15:00','18:00']]
+            });
+
+            $(document).ready(function() {
+                // Change to 12-hr format
+                $('.time-label0').html("09:00am");
+                $('.time-label4').html("01:00pm");
+                $('.time-label5').html("02:00pm");
+                $('.time-label6').html("03:00pm");
+                $('.time-label7').html("04:00pm");
+                $('.time-label8').html("05:00pm");
+                $('.time-label9').html("06:00pm");
+
+                // local storage
+                $(".modifybooking").click(function(){
+                    var editbooking2_date = $("#modify-date2 option:selected").val();
+                    localStorage.setItem("editbooking2_date", editbooking2_date);
+
+                    var editbooking2_start = $("#modify-start2 option:selected").val();
+                    localStorage.setItem("editbooking2_start", editbooking2_start);
+
+                    var editbooking2_end = $("#modify-end2 option:selected").val();
+                    localStorage.setItem("editbooking2_end", editbooking2_end);
+                    window.location.href = "index.html#existing-booking";
+                });
+            });
+
+          
+		</script>
+        <!-- END OF SCRIPTS -->
+</body>
+</html>

@@ -1,0 +1,1328 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Custom Fonts
+   ========================================================================== */
+
+   body {
+       font-family:'Open Sans', Arial, Helvetica, sans-serif;
+   }
+
+   
+
+/* ==========================================================================
+   UOW ROOM BOOKING SYSTEM STYLING 
+   ========================================================================== */
+
+/* ====================== COMMON STYLES ========================== */
+/* HEADER */
+.header-wrap {
+    background:#FFF;
+    min-height:97px;
+    padding:20px 35px;
+}
+
+.uow-logo {
+    max-width:50%;
+}
+
+/* BANNER */
+.banner-wrap {
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+}
+
+.banner-wrap img {
+    width: 100%;
+    height: 200px;
+}
+
+.banner-wrap .titleheader-wrap {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.45);
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.titleheader-wrap h1 {
+    margin: 0 auto;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    padding: 0 15px;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    color: #FFF;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-transform: uppercase;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* FOOTER */
+.footer-wrap {
+    background:#0c2340;
+    padding-top:15px;
+    padding-bottom:5px;
+    font-family:'Open Sans', Arial, Helvetica, sans-serif;
+}
+.copyright-text p {
+    color:#FFF;
+    font-size:12px;
+    font-weight:300;
+    text-align:center;
+    padding:0px;
+    letter-spacing:0.1px;
+}
+/* ====================== END OF COMMON STYLES ========================== */
+
+/* ====================== LOGIN PAGE ========================== */
+.login-wrap {
+    min-height:350px;
+    background:#fafafa;
+    font-family:'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+.login-wrap .container {
+    padding-top:50px;
+}
+
+.login-wrap .col-md-6 {
+    min-height:250px;
+}
+
+.login-wrap .col-md-6:first-child {
+    padding-top:10px;
+}
+
+.login-wrap h2 {
+    float:left;
+    max-width:100px;
+    margin:32px;
+    font-weight:600;
+    font-size:24px;
+}
+
+.select-dropdown {
+    position:relative;
+    float: left;
+    min-width: 260px;
+    margin:20px;
+}
+  
+.select-dropdown select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    min-width:200px;
+    height: 45px;
+    float: right;
+    margin: 5px 0px;
+    padding: 0px 24px;
+    font-size: 18px;
+    line-height: 1.75;
+    color:#333;
+    background-color: #ffffff;
+    background-image: none;
+    border: 1px solid #999;
+    -ms-word-break: normal;
+    word-break: normal;
+    outline: none !important;
+}
+
+.select-dropdown label {
+    display:block;
+}
+
+.select-dropdown:after {
+    content: '\f107';
+    font: normal normal normal 22px/1 FontAwesome;
+    color: #0c2340;
+    right: 20px;
+    top: 4px;
+    height: 34px;
+    padding: 15px 0px 0px 8px;
+    position: absolute;
+    pointer-events: none;
+}
+  
+.select-dropdown select:focus {
+    outline: 2px solid #0c2340 !important;
+}
+
+select::-ms-expand {
+    display: none;
+}
+  
+.login-wrap .form {
+    max-width:400px;
+    margin-left: 90px;
+    margin-top: 35px;
+    font-family:'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+.login-wrap .form .forgotpw {
+    margin-top:30px;
+}
+
+.login-wrap .form .forgotpw a {
+    font-size:12px;
+    color:#333;
+}
+
+.login-wrap .form .forgotpw a:hover {
+    text-decoration: none;
+    opacity:0.7;
+}
+
+.login-wrap .form .submit {
+    float:right;
+    margin-top:30px;
+    padding: 8px 15px;
+    width: 90px;
+    background:#fff;
+    font-weight: 600;
+    border: 1px solid #999;
+}
+
+.login-wrap .form .submit:hover {
+    background:#0c2340;
+    border:1px solid #0c2340;
+    color:#fff;
+    -moz-transition: background .5s ease,color .5s ease,border .5s ease;
+    -ms-transition: background .5s ease,color .5s ease,border .5s ease;
+    -webkit-transition: background .5s ease,color .5s ease,border .5s ease;
+    -o-transition: background .5s ease,color .5s ease,border .5s ease;
+}
+
+.login-wrap .form label {
+    display: block;
+    line-height: 38px;
+    float: left;
+    clear:left;
+    font-size:16px;
+    font-weight:600;
+    color:#333;
+}
+
+.login-wrap .form .input{
+    min-width: 280px;
+    padding: 10px;
+    color: #000;
+    float: right;
+    border: 1px solid #999;
+    margin-bottom: 5px;
+    margin-left: 3px;
+    margin-left: 20px;
+    font-size: 14px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.login-wrap .form .input:focus {
+    outline: 2px solid #0c2340;
+    color: #0c2340;
+}
+
+.login-wrap .form label:nth-of-type(2), .login-wrap .form .input:nth-of-type(2) {
+    margin-top:15px;
+}
+
+#login-error {
+    width: 210px;
+    float: right;
+    font-family:'Open Sans', Arial, Helvetica, sans-serif;
+    font-weight:700;
+    font-size: 12px;
+    margin-right: -20px;
+    margin-top:3px;
+    color:#dc3535;
+}
+
+#promo-error {
+    font-family:'Open Sans', Arial, Helvetica, sans-serif;
+    font-weight:700;
+    font-size: 12px;
+    margin-top:3px;
+    color:#dc3535;
+}
+
+#promo-success {
+    font-family:'Open Sans', Arial, Helvetica, sans-serif;
+    font-weight:700;
+    font-size: 12px;
+    margin-top:3px;
+    color:#dc3535;
+}
+
+#login-error .fa, #promo-error .fa {
+    margin-right:8px;
+}
+/* ====================== END OF LOGIN PAGE ========================== */
+
+/* ====================== STUDENT HOME PAGE ========================== */
+.student-id {
+    float:right;
+    margin-top:20px;
+}
+
+.student-id a {
+    font-family:'Open Sans', Arial, Helvetica, sans-serif;
+    font-weight:600;
+    color:#12335d;
+}
+
+.student-id a:hover {
+    text-decoration: none;
+    opacity: 0.5;
+}
+
+.student-id .fa-user {
+    margin-right:5px;
+}
+
+.student-id, .student-wrap table th, .student-wrap table td {
+    font-family:'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+.student-wrap a, .student-wrap a:hover {
+    text-decoration: none;
+}
+
+.student-wrap h2 {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size:22px;
+    font-weight:600;
+    /*color:#12335d;*/
+    color:#cc0000;
+    margin-top:30px;
+    padding-left:15px;
+    padding-right:15px;
+}
+
+.student-wrap h2.center {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size:22px;
+    font-weight:600;
+    text-align:center !important;
+    color:#cc0000;
+    margin-top:50px;
+    margin-bottom:30px;
+    padding-left:15px;
+    padding-right:15px;
+}
+
+.student-wrap h3 {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size:19px;
+    font-weight:600;
+    color:#12335d;
+    margin-top:30px;
+    padding-left:15px;
+    padding-right:15px;
+}
+
+.student-wrap h4 {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size:16px;
+    font-weight:700;
+    color:#333;
+    margin-top:30px;
+    padding-left:15px;
+    padding-right:15px;
+}
+
+.student-wrap button {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+.divider {
+    border-top:0.8px solid #0c2340;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 28px;
+}
+
+.imgtile {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    margin-bottom:30px;
+    font-weight:600;
+    position: relative;
+}
+
+.imgtile .img-responsive {
+    width:100% !important;
+}
+
+.imgtile img:hover {
+    filter: brightness(0.8);
+    -moz-filter: brightness(80%);
+    -webkit-filter: brightness(80%);
+    -ms-filter: brightness(80%);
+    -o-filter: brightness(80%);
+    -webkit-transition: 0.2s ease-in-out;
+    -moz-transition: 0.2s ease-in-out;
+    -ms-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+}
+
+.imgtile div {
+    background: #0c2340;
+    color: #FFF;
+    padding: 15px;
+    text-align: center;
+}
+
+.imgtile .fullybooked {
+    position: absolute;
+    color: #FFF;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+    font-size:18px;
+    padding: 20px;
+    padding-top: 45%;
+    top: 0;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background: none;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.student-wrap table {
+    margin-bottom: 70px;
+    font-size:16px;
+}
+
+.student-wrap table a {
+    color:#0c2340;
+    font-weight:bold;
+    margin-right:5px;
+    margin-left:5px;
+}
+
+.student-wrap table a:hover {
+    text-decoration: none;
+    opacity:0.7;
+}
+
+.student-wrap table tr:nth-child(even) {
+    background:#f0f0f0;
+}
+
+.student-wrap table tr:nth-child(odd) {
+    background:#FFF;
+}
+
+.student-wrap table tr td, .student-wrap table tr th {
+    padding:10px;
+}
+
+.remove-booking {
+    display:none;
+}
+
+#display-msg {
+    font-family:'Open Sans', Arial, Helvetica, sans-serif;
+    font-size:14px;
+    color:#dc3535;
+    font-weight:600;
+    text-align:center;
+}
+
+#bookingtable a {
+    cursor:pointer;
+}
+
+#student-booking1, #student-booking2, #student-booking3, #student-booking4, #student-booking5 {
+    font-size:14px !important;
+}
+
+#student-booking1 .centered,  #student-booking2 .centered, #student-booking3 .centered, #student-booking4 .centered, 
+#student-booking5 .centered {
+    text-align:center;
+}
+
+#total-amount {
+    font-weight:700;
+    font-size: 17px;
+    border:none !important;
+}
+
+#total-amount:focus {
+    outline:none !important;
+}
+
+.booking-modal h1 {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    /*color: #12335d;*/
+    color:#cc0000;
+    margin-top: 30px;
+    padding-left:15px;
+    text-align:center;
+}
+
+.booking-modal h2 {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #153763;
+    padding-left:15px;
+    margin-top: 190px;
+}
+
+.booking-modal .modal-body {
+    min-height:370px;
+    font-family:'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+.booking-modal .modal-content {
+    position: relative;
+    background-color: #fff;
+    border: none !important;
+    border-radius: 0px !important; 
+}
+
+.booking-modal .modal-body div:nth-child(even) {
+    margin-bottom: 8px;
+}
+
+.booking-modal .h-divider{
+    margin-top:5px;
+    height:1px;
+    width: 95%;
+    margin-left: 15px;
+    text-align:center;
+    border-top:1px solid #e5e5e5;
+}
+
+.booking-modal .close {
+    font-size: 36px;
+    margin-right: -5px;
+}
+
+.booking-modal .receipt {
+    margin-right: 31%;
+    padding: 4px 15px;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif !important;
+    color: #153763 !important;
+    background: #fff;
+    font-weight: 600;
+    border: 1px solid #153763 !important;
+}
+
+.booking-modal .receipt:hover {
+    color:#fff !important;
+    background:#153763;
+    -webkit-transition: 0.2s ease-in-out;
+    -moz-transition: 0.2s ease-in-out;
+    -ms-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+}
+
+.booking-modal .modal-dialog {
+    margin-top:45px;
+}
+
+.booking-modal .modal-header {
+    padding-top:5px;
+}
+
+.booking-modal .fa-file-text {
+    margin-right:6px;
+}
+/* ====================== END OF STUDENT HOME PAGE ========================== */
+
+/* ====================== STUDENT - MODIFY BOOKING ========================== */
+.booking-info {
+    padding-left:15px;
+    padding-right:15px;
+    font-size:15px;
+    min-height:130px;
+    font-family:'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+.booking-info > div {
+    float:left;
+    margin-left:10px;
+}
+
+.booking-info > label {
+    float:left;
+    margin-right: 120px;
+    font-size: 16px;
+}
+
+.payment-info > label {
+    float:left;
+    margin-right: 120px;
+    font-size: 16px;
+    width:150px;
+    font-family:'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+.payment-info input {
+    width:240px;
+    padding: 0px 5px;
+    font-family:'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+.booking-info > label:nth-of-type(4) {
+    margin-left:15px;
+    margin-right:3px;
+}
+
+.booking-info .time-dropdown {
+    font-weight:400;
+    margin-left:15px;
+}
+
+.date-dropdown {
+    margin-left:30px !important;
+}
+
+.room-dropdown {
+    margin-left:22px !important;
+}
+
+.time-dropdown select, .date-dropdown select, .room-dropdown select {
+    padding:2px;
+    font-weight:400;
+    width:205px;
+    font-size: 13px !important;
+    padding: 4px 6px;
+}
+
+.time-dropdown select:focus, .date-dropdown select:focus, .room-dropdown select:focus {
+    outline: 2px solid #0c2340 !important;
+}
+
+.schedule-table {
+    margin-bottom: 30px !important;
+}
+
+.schedule-rows tr { 
+    background:#fff !important;
+}
+
+.schedule-rows td {
+    width:120px;
+    height:30px;
+    margin:3px !important;
+    padding:7px !important;
+    background-color:#f9f9f9;
+    cursor:pointer;
+}
+
+.schedule-rows .time-label0, .schedule-rows .time-label1, 
+.schedule-rows .time-label2, .schedule-rows .time-label3, 
+.schedule-rows .time-label4, .schedule-rows .time-label5, 
+.schedule-rows .time-label6, .schedule-rows .time-label7, 
+.schedule-rows .time-label8, .schedule-rows .time-label9 {
+    font-weight:600;
+    padding-right: 20px !important;
+    text-align: left !important;
+    padding-left: 15px !important;
+}
+
+.schedule-rows td:first-child {
+    background-color:transparent;
+    text-align:right;
+    position:relative;
+}
+
+.schedule-rows .time-slot {
+    border:1px solid #f0f0f0;
+}
+
+.schedule-rows #selected, .schedule-rows td[data-selecting] {
+    background-color:#1fa463; 
+}
+
+.schedule-rows td[data-disabled] { 
+    opacity:0.55; 
+}
+    
+.schedule-header th {
+    text-align:center;
+}
+
+#weekly-schedule {
+    position:relative;
+}
+
+#weekly-schedule .blocked {
+    position:absolute;
+    width:720px;
+    height:403px !important;
+}
+
+.modifybooking {
+    float: left;
+    margin-top: 20px;
+    padding: 12px 55px;
+    color:#fff !important;
+    background: #153763;
+    font-weight: 600;
+    border: none !important;
+    margin-left: 10px;
+    margin-bottom: 40px;
+}
+
+.saveroom {
+    float: left;
+    margin-top: 20px;
+    padding: 12px 55px;
+    color:#fff !important;
+    background: #153763;
+    font-weight: 600;
+    border: none !important;
+    margin-left: 15px;
+    margin-bottom: 40px;
+}
+
+.payment-pg {
+    font-family:'Open Sans', Arial, Helvetica, sans-serif;
+    font-size:14px;
+}
+
+.newbooking, .newacc {
+    float: left;
+    margin-top: 20px;
+    padding: 12px 55px;
+    color:#fff !important;
+    background: #153763;
+    font-weight: 600;
+    border: none !important;
+    margin-left: 15px;
+    margin-bottom: 40px;
+}
+
+.applypromo {
+    padding: 1px 15px;
+    margin-left: 20px;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif !important;
+    color: #153763 !important;
+    background: #fff;
+    font-weight: 600;
+    border: 1px solid #153763 !important;
+}
+
+.promocode {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif !important;
+    color: #153763 !important;
+    font-weight: 600;
+}
+
+.modifybooking:hover, .saveroom:hover, .newbooking:hover, .newacc:hover {
+    opacity:0.7;
+    -webkit-transition: 0.2s ease-in-out;
+    -moz-transition: 0.2s ease-in-out;
+    -ms-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+}
+
+#time-start option:disabled, #time-end option:disabled {
+    color:#ccc !important;
+}
+
+/* ====================== END OF STUDENT - MODIFY BOOKING ========================== */
+
+/* ====================== STAFF ========================== */
+#one, #two, #three, #four, #five {
+    background-color: white;
+    border:1px solid #c3c3c3;
+    color:#0c2340;
+    margin-top:10px; 
+    margin-left:10px; 
+    width:13.1%; 
+    height: 57px;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+#one:focus, #two:focus, #three:focus, #four:focus, #five:focus {
+    outline:1px solid #777 !important;
+}
+
+/* Staff - Creating Room Page - Timeslots Dropdown */
+.dropdown {
+    position: relative;
+    font-size: 14px;
+    color: #333;
+    margin-top:18px;
+    font-family:'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+.dropdown .dropdown-list {
+    padding: 12px;
+    background: #fff;
+    position: absolute;
+    top: 30px;
+    left: 2px;
+    right: 2px;
+    box-shadow: 0 1px 2px 1px rgba(0, 0, 0, .15);
+    transform-origin: 50% 0;
+    transform: scale(1, 0);
+    transition: transform 0.15s ease-in-out 0.15s;
+    max-height: 66vh;
+    overflow-y: scroll;
+}
+
+.dropdown .dropdown-option {
+    display: block;
+    padding: 8px 12px;
+    font-weight:400;
+    opacity: 0;
+    transition: opacity 0.15s ease-in-out;
+}
+
+.dropdown .dropdown-label {
+    display: block;
+    height: 30px;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 6px 12px;
+    line-height: 1;
+    cursor: pointer;
+    font-weight:400;
+    color:#000;
+}
+
+.dropdown .dropdown-label:before {
+    float: right;
+    content: '\f0dd';
+    margin-top: -3px;
+    font: normal normal normal 18px/1 FontAwesome;
+}
+
+.dropdown.on .dropdown-list {
+    transform: scale(1, 1);
+    transition-delay: 0s;
+}
+
+.dropdown.on .dropdown-list .dropdown-option {
+    opacity: 1;
+    transition-delay: 0.2s;
+}
+
+.dropdown.on .dropdown-label:before {
+    float: right;
+    content: '\f0de';
+    margin-top:3px;
+    font: normal normal normal 18px/1 FontAwesome;
+}
+
+.dropdown [type="checkbox"] {
+    position: relative;
+    top: 2px;
+    margin-right: 4px;
+}
+
+select[name="room_type"] {
+    position:relative;
+    border: 1px solid #ccc;
+    padding: 4px 9px;
+    color: #000;
+    font-family:'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+select[name="room_type"]:focus {
+    outline:none !important;
+}
+
+select[name="availability"] {
+    font-size:14px;
+}
+/* ====================== END OF STAFF ========================== */
+
+/* ====================== USER ADMINISTRATOR ========================== */
+.user-details {
+    min-height:160px;
+    background:#f7f7f7;
+    margin-bottom:30px;
+    position: relative;
+}
+
+.user-details .suspend-acc {
+    position: absolute;
+    color: #FFF;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+    font-size: 16px;
+    font-weight:700;
+    letter-spacing: 0.6px;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    padding: 20px;
+    padding-top: 20%;
+    top: 0;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background: none;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.user-details .col-md-5 {
+    margin-left: -15px;
+}
+
+.user-details .col-md-6 {
+    margin-left: 12px;
+    padding-right:0px;
+}
+
+.user-management-title {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size:22px;
+    font-weight:600;
+    width:70%;
+    color:#cc0000;
+    margin-top:30px;
+    padding-left:15px;
+    padding-right:15px;
+}
+
+.user-details h5 {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size:16px;
+    font-weight:600;
+    color:#12335d;
+    margin-top:17px;
+    margin-bottom:15px;
+}
+
+.user-details h6 {
+    font-family:'Open Sans', Arial, Helvetica, sans-serif;
+    font-size:11.3px;
+    font-weight:700;
+    color:#000;
+    margin-top: 10px;
+    margin-bottom: 2px;
+}
+
+.user-details .col-md-6 p {
+    font-family:'Open Sans', Arial, Helvetica, sans-serif;
+    font-size:11px;   
+    font-weight: 400;
+    color:#333;
+}
+
+.user-details .col-md-6 a {
+    font-family:'Open Sans', Arial, Helvetica, sans-serif;
+    font-size:12px;
+    color:#666;
+    font-weight:700;
+    cursor: pointer;
+}
+
+.user-details .col-md-6 a:hover {
+    opacity:0.7;
+}
+
+.view-all {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size:14px;
+    color:#12335d;
+    font-weight:600;
+    float: right;
+    margin-top: -29px;
+    margin-right: 30px;
+}
+
+.view-all .fa-angle-right {
+    font-size:16px;
+    color:#12335d;
+    margin-left:10px;
+    font-weight: bold;
+}
+
+.view-all:hover, .view-all .fa-angle-right:hover {
+    opacity:0.7;
+}
+
+.pg-gap {
+    min-height:50px;
+}
+
+.admin {
+    margin-bottom:40px;
+}
+
+.new-account {
+    font-family:'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+.new-account > label {
+    float: left;
+    width:300px;
+    margin-left:15px;
+    font-size: 16px;
+}
+
+.new-account input {
+    width:250px;
+    padding:3px 8px;
+}
+
+.new-account input:nth-of-type(3) {
+    width:444px;
+}
+
+.new-account input::placeholder {
+    color:#999;
+    font-size:12px;
+    font-style: italic;
+}
+
+.ua-divider {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 0;
+    border-top: 1px solid #ccc;
+}
+
+.resetpw {
+    padding: 3px 15px;
+    margin-left: 20px;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif !important;
+    color: #153763 !important;
+    background: #fff;
+    font-weight: 600;
+    border: 1px solid #153763 !important;
+}
+
+.resetpw:hover {
+    opacity:0.7;
+    -webkit-transition: 0.2s ease-in-out;
+    -moz-transition: 0.2s ease-in-out;
+    -ms-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+}
+
+.ua-pw-error {
+    margin-left: 27.7%;
+    margin-top: 10px;
+    font-family:'Open Sans', Arial, Helvetica, sans-serif;
+    font-weight:700;
+    font-size: 12px;
+    color:#dc3535;
+}
+
+.ua .fa-exclamation-circle {
+    margin-right:6px;
+}
+
+
+/* ====================== END OF USER ADMINISTRATOR ========================== */
+
+
+/* ==========================================================================
+   MEDIA QUERIES
+   ========================================================================== */
+@media screen and (max-width:1200px) {
+    .login-wrap .form {
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width:990px) {
+    .login-wrap .col-md-6 {
+        min-height:0px;
+    }
+
+    .login-wrap .form .input {
+        min-height:0px;
+    }
+
+    .imgtile .fullybooked {
+        padding-top:15%;
+    }
+}
+
+@media screen and (max-width:540px) {
+    .login-wrap .col-md-6 {
+        min-height: 0px;
+    }
+
+    .login-wrap .form {
+        margin-left: 25px;
+        margin-top: 0px;
+    }
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
