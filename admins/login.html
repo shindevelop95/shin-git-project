@@ -1,0 +1,107 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>UOW Room Booking System</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="images/favicon.png" rel="shortcut icon" type="image/vnd.microsoft.icon">
+
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/jquery-ui.css">
+        <link rel="stylesheet" href="../css/font-awesome.css" type="text/css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+        <script src="../js/modernizr-2.8.3.min.js"></script>
+        <script src="../js/jquery-1.12.0.min.js"></script>
+        <script src="../js/plugins.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/scrollreveal"></script>
+   </head>
+    
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+       	<!-- START OF CONTENT -->
+        
+        	<!-- START OF NAVIGATION -->
+            <header>
+                <div class="header-wrap">
+                    <div class="container">
+                        <!-- START OF LOGO -->
+                        <div class="col-md-4">
+                            <img src="../images/uow-logo.png" class="uow-logo">
+                        </div>
+                        <!-- END OF LOGO -->
+                    </div>
+                </div>
+            </header>
+            <!-- END OF NAVIGATION -->
+    
+            <!-- START OF HOMEPAGE BANNER -->
+        <div class="banner-wrap">
+                <img src="../images/banner1.jpeg">
+                <div class="titleheader-wrap">
+                    <h2 class="sub-headline">
+                        <span class="first-letter">W</span>elcome
+                    </h2>
+                    <h1 class="animate-right">UOW ROOM BOOKING SYSTEM</h1>
+                </div>
+           </div>
+            <!-- END OF HOMEPAGE BANNER -->
+                      
+            <!-- START OF LOGIN SECTION -->
+            <section class="login-wrap">
+            	<div class="container">
+                	<div class="row">
+                        <!-- START OF I AM A ... DROPDOWN SECTION -->
+                        <div class="col-md-6">
+                            <h2>Login as:</h2>
+                            <div class="select-dropdown" id="category">
+                                    <select>
+                                        <option value="Admin">Admin</option>
+                                    </select>
+                            </div>
+                        </div>
+                        <!--END OF I AM A ... DROPDOWN SECTION -->
+                       <!-- START OF LOGIN -->
+                        <div class="col-md-6">
+                                <form action="login.html" class="form contact-form" method="post">
+                                    <div class="input-group-wrap">
+                                            <div class="input-group">
+                                                <input type="email" class="input" placeholder="Email" required>
+                                                <span class="bar"></span>
+                                            </div>
+                                            <div class="input-group">
+                                                <input type="text" class="input" placeholder="Password" required>
+                                                <span class="bar"></span>
+                                            </div>
+                                            <div class="submit-group">
+                                                <label class="forgotpw"><a href="#">Forgot Password?</a></label>
+                                                <button onclick="window.location.href='index.html';" type="submit" class="btn"><span>Login</span></button>
+                                            </div>
+                                    </div>
+                                </form>
+                            <!-- DISPLAY ERROR MESSAGE -->
+                            <div id="login-error"></div>
+                        </div>
+                        <!-- END OF LOGIN FORM-->
+                    </div>
+                    <!-- END OF ROW -->
+                </div>
+            </section>
+            <!-- END OF LOGIN SECTION -->
+
+        	<!-- START OF FOOTER -->
+            <footer class="text-center py-5">
+                &copy; Copyright © 2020 University of Wollongong.
+            </footer>
+            <!-- END OF FOOTER -->
+        <script src="../js/main.js"></script>
+    </body>
+</html>

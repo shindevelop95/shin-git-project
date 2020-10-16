@@ -1,0 +1,556 @@
+/*=================================Font Awesome=============================================*/
+@import url('https://fonts.googleapis.com/css?family=Cabin|Herr+Von+Muellerhoff|Source+Sans+Pro:400,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Niconne&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Teko:300,400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cabin|Herr+Von+Muellerhoff|Source+Sans+Pro:400,900&display=swap');
+
+/*=================================Global=============================================*/
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+hr{
+    color:#eee;
+}
+
+:root{
+    --main-font: 'Source Sans Pro', sans-serif;
+    --secondary-font: 'Herr Von Muellerhoff', cursive;
+    --body-font: 'Cabin', sans-serif;
+    --main-font-color-dark: #252525;
+    --secondary-font-color: #c59d5f;
+    --body-font-color: #515151;
+}
+
+section{
+    padding:60px 0;
+}
+
+footer{
+    background-color: black;
+    color:rgba(255,255,255,.5);
+    padding:50px 0;
+}
+
+.btn{
+    width:100px;
+    padding:5px 0 !important;
+    border:1px solid #c69963;
+    position: relative;
+    overflow:hidden;
+    background-color: var(--secondary-font-color);
+    color:#eee;
+}
+
+.btn::before{
+    content:"";
+    position: absolute;
+    top:0;
+    left:-100%;
+    width:100%;
+    height:100%;
+    background:linear-gradient(120deg,transparent,rgba(255,255,255,.3), transparent);
+    transition:all 650ms;
+}
+
+.btn:hover::before{
+    left:100%;
+}
+
+
+.header-wrap {
+    background:#FFF;
+    min-height:97px;
+    padding:20px 35px;
+}
+
+.uow-logo {
+    max-width:50%;
+}
+
+.flexbox-header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login-wrapper label{
+    font-family: var(--body-font);
+    font-weight: 200;
+    position:relative;
+    margin-right:10px;
+}
+
+.login-wrapper label::after{
+    content: '';
+    position:absolute;
+    border-right: 2px solid black;
+    height:27px;
+    right:-5%;
+    color:red;
+}
+
+.banner-wrap .titleheader-wrap {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: 0;
+    left: 0;
+    z-index:3;
+}
+
+.titleheader-wrap h1 {
+    font-family: var(--main-font);
+    font-weight:900;
+    color:#fff;
+}
+
+.titleheader-wrap .sub-headline{
+    font-size:8.5rem;
+    font-family:var(--secondary-font);
+    color:var(--secondary-font-color);
+    font-weight:100;
+    line-height:.4;
+    letter-spacing: 2px;
+    opacity:1;
+}
+
+.logged-in{
+    color:var(--main-font-color-dark)!important;
+    font-family: var(--body-font)!important;
+    font-weight:500!important;
+}
+
+.login-wrapper a{
+    margin-left: 15px;
+    padding:0 5px;
+    background-color: #c59d5f;
+}
+
+.login-wrapper span{
+    color:#eee;
+    font-family: var(--body-font);
+}
+/*=================================End of Global=============================================*/
+/*=================================Start of adminview.html=============================================*/
+/*=================================Start of Admin Banner=============================================*/
+.banner-wrap {
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+    overflow: hidden;
+}
+
+.banner-wrap::after{
+    content:'';
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+
+.banner-wrap img {
+    width: 100%;
+    height: 50vh;
+}
+
+.banner-wrapper
+{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px;
+}
+
+.banner-wrapper img{
+    width:100%;
+    height:100%;
+    cursor:pointer;
+    
+}
+
+.banner-area .banner{
+    position:relative;
+}
+
+.banner-wrapper .banner:after
+{
+    content:"";
+    transition:0.9s;
+    cursor: pointer;
+}
+
+.banner-wrapper .banner:hover:after{
+    content:"";
+    position: absolute;
+    top:0;
+    left:0;
+    background-color: rgba(0,0,0,0.6);
+    height:100%;
+    width:100%;
+    z-index:2;
+}
+
+.banner span{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    color:var(--secondary-font-color);
+    font-family: var(--body-font);
+    font-weight: bold;
+    opacity: 0;
+    z-index: 999;
+    transition:0.5s;
+}
+
+.banner span:hover{
+    opacity:1;
+}
+/*=================================Start of Admin Banner=============================================*/
+/*=================================Start of Card=============================================*/
+
+.activities{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.activities h3{
+    color:var(--secondary-font-color);
+    font-family: var(--body-font);
+    font-weight: 900;
+}
+
+.card-section{
+    margin:0 auto;
+    max-width:1000px;
+    display:grid;
+    grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
+    gap:20px;
+    font-family:sans-serif
+}
+
+.card-wrapper{
+    box-shadow: 0 0 3px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.card-img{
+    width:100%;
+    display:block;
+}
+
+.card-content{
+    line-height:1.5;
+    font-size:0.9em;
+    padding:15px;
+    background:#fafafa;
+}
+
+.card-content > p:first-of-type{
+    margin-top:0;
+}
+
+.card-content > p:last-of-type{
+    margin-bottom:0;
+}
+
+.card-content h5{
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.card-content h6{
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.card-content p,
+.card-content span{
+    font-family: sans-serif;
+    font-size: 0.7rem;
+    opacity: 0.8;
+}
+
+
+.card-suspended{
+    position: relative;
+}
+
+.card-suspended:after{
+    content:"";
+    position: absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    background-color: rgba(240, 52, 52, 0.9);
+    z-index:999;
+}
+
+.card-suspended label{
+    position: absolute;
+    color:#eee;
+    font-weight: 900;
+    top:50%;
+    left:6%;
+    z-index:1000;
+    transform: translateX(-50%);
+    transform: translateY(-50%);
+}
+
+.card-content i{
+    color:green;
+}
+
+.card-content .online{
+    color:green;
+}
+
+/*=================================End of Card Section=============================================*/
+/*=================================End of adminview.html=============================================*/
+
+.student-form{
+    width:60%;
+    margin:auto;
+}
+
+.student-account h2{
+    text-align: center;
+    margin:20px 0;
+    font-family: var(--body-font);
+    color:var(--secondary-font-color);
+}
+
+.student-form .form-group{
+    font-family: var(--body-font);
+    color: var(--body-font-color);
+}
+
+.student-account .card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.student-account .btn{
+    margin-left: 1.25rem;
+}
+
+/*=================================Start of Suspend.html=============================================*/
+.grid-item{
+    width:180px;
+    margin:10px;
+}
+
+.button-group{
+    display:flex;
+    justify-content: space-evenly;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.acc-manage .button-group .View,
+.acc-manage .button-group .suspend{
+    border:none;
+    background-color: transparent;
+    font-family: var(--body-font);
+    color:var(--main-font-color-dark);
+    font-family: var(--body-font);
+    font-weight: bold;
+    transition: 0.5s;
+}
+.acc-manage .button-group .View:focus,
+.acc-manage .button-group .suspend:focus{
+    outline:none!important;
+}
+
+.acc-manage .button-group .View:hover,
+.acc-manage .button-group .suspend:hover{
+    color:var(--secondary-font-color);
+    transform: scale(1.1);
+}
+
+.filter-btn{
+    background-color: transparent;
+    padding:10px;
+    margin:0 10px;
+    border:2px solid var(--secondary-font-color);
+    color: var(--secondary-font-color);
+    border-radius: 40%;
+    font-weight: bold;
+    transition:.5s;
+}
+
+.filter-btn:focus {
+    outline: 0 !important;
+}
+
+.filter-btn:first-child{
+    padding:0 35px;
+}
+.filter-btn:last-child
+{
+    padding:0 25px;
+}
+
+.filter-btn:hover{
+    background-color:var(--secondary-font-color);
+    color:#eee;
+}
+
+.modal-header{
+    background-color: var(--secondary-font-color);
+}
+
+.booking-modal h1 {
+    font-family:var(--main-font);
+    font-size: 22px;
+    font-weight: 600;
+    /*color: #12335d;*/
+    color:#eee;
+    margin-top: 30px;
+    padding-left:15px;
+    text-align:center;
+}
+
+.booking-modal .modal-body {
+    min-height:370px;
+    font-family:var(--body-font);
+}
+
+.booking-modal .modal-content {
+    position: relative;
+    background-color: #fff;
+    border: none !important;
+    border-radius: 0px !important; 
+}
+
+.booking-modal .modal-body div:nth-child(even) {
+    margin-bottom: 8px;
+}
+
+.modal-header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-header .close{
+    font-size:36px;
+    padding-right:30px;
+    color:#eee!important;
+}
+
+.modal-group{
+    display: flex;
+    max-width:70%;
+    margin:0 auto;
+    justify-content: space-between;
+}
+
+.booking-modal .modal-dialog {
+    margin-top:45px;
+}
+
+/*=================================End of suspend.html=============================================*/
+
+/*=================================Start of approve-booking.html=============================================*/
+.booking-wrapper img{
+    width:50%;
+    height:50%;
+}
+
+.grid-wrapper{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.grid-wrapper .g-item{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:var(--body-font-color);
+    line-height: 1;
+    font-size:0.7rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding: 10px 0;
+    background-color: #eee;
+}
+
+.grid-wrapper .g-item .item-content{
+    padding:0 25px;
+}
+
+.cancel-btn span{
+    color:#F52E2E;
+}
+.grid-wrapper .fa-check-circle{
+   color:green;
+   font-size: 1.1rem;
+   padding:10px;
+}
+
+.grid-wrapper .fa-times-circle{
+    color:red;
+    font-size: 1.1rem;
+   padding:10px;
+ }
+
+ .grid-wrapper .g-item .item-content .approved-1,
+ .grid-wrapper .g-item .item-content .approved-2,
+ .grid-wrapper .g-item .item-content .approved-3,
+ .grid-wrapper .g-item .item-content .approved-4,
+ .grid-wrapper .g-item .item-content .approved-5,
+ .grid-wrapper .g-item .item-content .approved-6
+ {
+
+     color:green;
+ }
+
+ .grid-wrapper .g-item .item-content .rejected{
+     color:red;
+ }
+
+.strike{
+    text-decoration: line-through;
+    text-decoration-color: #252525;
+ }
+
+.hidden{
+    display:none;
+}
+
+.cancelled-1,
+.cancelled-2,
+.cancelled-3,
+.cancelled-4,
+.cancelled-5,
+.cancelled-6{
+    display:none;
+}
+
+.show{
+    display:inline-block;
+}
+
+.cl-btn{
+    border: none;
+    color:black;
+    background-color: transparent;
+}
+
+/*=================================End of approve-booking.html=============================================*/
+
+

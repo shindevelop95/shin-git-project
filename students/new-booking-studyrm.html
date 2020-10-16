@@ -60,7 +60,7 @@
                       <!-- START OF MODIFY BOOKING -->
                         <div class="booking-info col-md-12">
                             <div class="booking-section">
-                                <h2>NEW BOOKING: AUDITORIUM</h2>
+                                <h2>NEW BOOKING: STUDY ROOM</h2>
                                     <hr class="divider">
 
                                     <!-- START OF BOOKING INFO -->   
@@ -68,55 +68,58 @@
                                         
                                         <div class="room-dropdown">
                                             <label>Select Room:</label>
-                                                <select class="auditorium-select" id="newa-location">
+                                                <select class="study-room-select" id="new-location">
                                                     <option>Select Room</option>
-                                                    <option value="Auditorium A4.11">Auditorium A4.11</option>
-                                                    <option value="Auditorium A4.12">Auditorium A4.12</option>
-                                                    <option value="Auditorium A5.02">Auditorium A5.02</option>
-                                                    <option value="Auditorium A5.11">Auditorium A5.11</option>
-                                                    <option value="Auditorium A5.12">Auditorium A5.12</option>
+                                                    <option value="Study Room L4.11">Study Room L4.11</option>
+                                                    <option value="Study Room L4.12">Study Room L4.12</option>
+                                                    <option value="Study Room L5.02">Study Room L5.02</option>
+                                                    <option value="Study Room L5.11">Study Room L5.11</option>
+                                                    <option value="Study Room L5.12">Study Room L5.12</option>
                                                 </select>
                                         </div>
                                   
                                         
                                         <div class="date-dropdown">
                                             <label>Select Date:</label>                                   
-                                                <select id="newa-date">
-                                                    <option value="25 Jun 2020">Monday    (25 Jun 2020)</option>
-                                                    <option value="26 Jun 2020">Tuesday   (26 Jun 2020)</option>
-                                                    <option value="27 Jun 2020">Wednesday (27 Jun 2020) </option>
-                                                    <option value="28 Jun 2020">Thursday  (28 Jun 2020)</option>
-                                                    <option value="29 Jun 2020">Friday    (29 Jun 2020)</option>
+                                                <select class="sr-date-select" id="new-date">
+                                                    <option>Select Date</option>
+                                                    <option value="15 Jun 2020">Monday (15 Jun 2020)</option>
+                                                    <option value="16 Jun 2020">Tuesday   (16 Jun 2020)</option>
+                                                    <option value="17 Jun 2020">Wednesday (17 Jun 2020) </option>
+                                                    <option value="18 Jun 2020">Thursday  (18 Jun 2020)</option>
+                                                    <option value="19 Jun 2020">Friday    (19 Jun 2020)</option>
                                                 </select>
                                         </div>
                                     
                                         <div class="time-dropdown">
                                         <label>Select Timing:</label>                                 
-                                                <select id="newa-start">
-                                                    <option value="09:00am">09:00 am</option>
-                                                    <option value="10:00am">10:00 am</option>
-                                                    <option value="11:00am">11:00 am</option>
-                                                    <option value="12:00pm">12:00 pm</option>
-                                                    <option value="01:00pm">01:00 pm</option>
-                                                    <option value="02:00pm">02:00 pm</option>
-                                                    <option value="03:00pm">03:00 pm</option>
-                                                    <option value="04:00pm">04:00 pm</option>
-                                                    <option value="05:00pm">05:00 pm</option>
-                                                    <option value="06:00pm">06:00 pm</option>
-                                                </select>
+                                            <select id="new-start">
+                                                <option>Select Start Time</option>
+                                                <option value="09:00am">09:00 am</option>
+                                                <option value="10:00am">10:00 am</option>
+                                                <option value="11:00am">11:00 am</option>
+                                                <option value="12:00pm">12:00 pm</option>
+                                                <option value="01:00pm">01:00 pm</option>
+                                                <option value="02:00pm">02:00 pm</option>
+                                                <option value="03:00pm">03:00 pm</option>
+                                                <option value="04:00pm">04:00 pm</option>
+                                                <option value="05:00pm">05:00 pm</option>
+                                                <option value="06:00pm">06:00 pm</option>
+                                            </select>
                                         
                                         <label>to</label>
-                                                <select id="newa-end">
-                                                    <option value="10:00am">10:00 am</option>
-                                                    <option value="11:00am">11:00 am</option>
-                                                    <option value="12:00pm">12:00 pm</option>
-                                                    <option value="01:00pm">01:00 pm</option>
-                                                    <option value="02:00pm">02:00 pm</option>
-                                                    <option value="03:00pm">03:00 pm</option>
-                                                    <option value="04:00pm">04:00 pm</option>
-                                                    <option value="05:00pm">05:00 pm</option>
-                                                    <option value="06:00pm">06:00 pm</option>
-                                                </select>
+                                            <select id="new-end">
+                                                <option>Select End Time</option>
+                                                <option value="10:00am">10:00 am</option>
+                                                <option value="11:00am">11:00 am</option>
+                                                <option value="12:00pm">12:00 pm</option>
+                                                <option value="01:00pm">01:00 pm</option>
+                                                <option value="02:00pm">02:00 pm</option>
+                                                <option value="03:00pm">03:00 pm</option>
+                                                <option value="04:00pm">04:00 pm</option>
+                                                <option value="05:00pm">05:00 pm</option>
+                                                <option value="06:00pm">06:00 pm</option>
+                                            </select>
                                         </div>
                                         <div class="booking-confirm">
                                             <button class="newbooking btn" onclick="location.href='index.html#existing-booking'"><span>MAKE PAYMENT</span></button>
@@ -176,46 +179,49 @@
         
                     $(document).ready(function() {
                         // Change Timings based on room selection - Serialize Data (Available Timings)
-                        $("select.auditorium-select").change(function(){
+                        $("select.study-room-select").change(function(){
                             var room = $(this).children("option:selected").val();
-                            if (room == "Auditorium A4.11") {
+                            if (room == "Study Room L4.11") {
                                 $("#weekly-schedule").data('artsy.dayScheduleSelector').deserialize({
-                                    '1': [['14:00','16:00']],
-                                    '2': [['11:00','14:00']],
+                                    '1': [['13:00','16:00']],
+                                    '2': [['16:00','19:00']],
+                                    '3': [['14:00','16:00']],
                                     '4': [['10:00','12:00']], 
-                                    '5': [['09:00','11:00'], ['15:00','18:00']]
+                                    '5': [['09:00','11:00']]
                                 });
-                            } else if (room == "Auditorium A4.12") {
+                            } else if (room == "Study Room L4.12") {
                                 $('.time-slot').removeAttr('id');
                                 $("#weekly-schedule").data('artsy.dayScheduleSelector').deserialize({
-                                    '1': [['10:00','12:00']],
+                                    '1': [['13:00','16:00']],
                                     '2': [['11:00','14:00'], ['16:00','19:00']],
                                     '3': [['15:00','17:00']],
                                     '4': [['11:00','13:00']], 
                                     '5': [['09:00','11:00']]
                                 });
-                            } else if (room == "Auditorium A5.02") {
+                            } else if (room == "Study Room L5.02") {
                                 $('.time-slot').removeAttr('id');
                                 $("#weekly-schedule").data('artsy.dayScheduleSelector').deserialize({
-                                    '2': [['13:00','15:00'], ['16:00','19:00']],
-                                    '3': [['11:00','16:00']],
+                                    '1': [['13:00','16:00']],
+                                    '2': [['16:00','19:00']],
+                                    '3': [['13:00','16:00']],
                                     '5': [['09:00','11:00']]
                                 });
-                            } else if (room == "Auditorium A5.11") {
+                            } else if (room == "Study Room L5.11") {
                                 $('.time-slot').removeAttr('id');
                                 $("#weekly-schedule").data('artsy.dayScheduleSelector').deserialize({
-                                    '1': [['10:00','12:00']],
-                                    '2': [['11:00','14:00'], ['16:00','19:00']],
+                                    '1': [['13:00','16:00']],
+                                    '2': [['11:00','14:00']],
                                     '3': [['14:00','16:00']],
                                     '4': [['10:00','12:00']], 
-                                    '5': [['09:00','11:00'], ['16:00','18:00']]
+                                    '5': [['16:00','18:00']]
                                 });
-                            } else if (room == "Auditorium A5.12") {
+                            } else if (room == "Study Room L5.12") {
                                 $('.time-slot').removeAttr('id');
                                 $("#weekly-schedule").data('artsy.dayScheduleSelector').deserialize({
-                                    '2': [['16:00','19:00']],
+                                    '1': [['13:00','16:00']],
+                                    '2': [['12:00','14:00']],
                                     '3': [['14:00','16:00']],
-                                    '5': [['09:00','11:00'], ['16:00','18:00']]
+                                    '5': [['09:00','11:00']]
                                 });
                             } else {
                                 $('.time-slot').removeAttr('id');
@@ -232,34 +238,74 @@
                         $('.time-label9').html("06:00pm");
         
                         // Set price based on room selected
-                        $("select.auditorium-select").change(function(){
+                        $("select.study-room-select").change(function(){
                             var room = $(this).children("option:selected").val();
-                            if (room == "Auditorium A4.11") {
-                                $("#total-amount").html("$43.00");
-                            } else if (room == "Auditorium A4.12") {
-                                $("#total-amount").html("$48.00");
-                            } else if (room == "Auditorium A5.02") {
-                                $("#total-amount").html("$50.00");
-                            } else if (room == "Auditorium A5.11") {
-                                $("#total-amount").html("$46.00");
+                            if (room == "Study Room L4.11") {
+                                $("#total-amount").html("$22.00");
+                            } else if (room == "Study Room L4.12") {
+                                $("#total-amount").html("$28.00");
+                            } else if (room == "Study Room L5.02") {
+                                $("#total-amount").html("$22.00");
+                            } else if (room == "Study Room L5.11") {
+                                $("#total-amount").html("$24.00");
                             } else {
-                                $("#total-amount").html("$58.00");
+                                $("#total-amount").html("$31.00");
+                            }
+                        });
+        
+                        // Block out timing for Monday (15 Jun 2020) - Study Room L5.02
+                        $("select.sr-date-select").change(function(){
+                            var date = $(this).children("option:selected").val();
+                            console.log(date);
+                            if (date == "15 Jun 2020") {
+                                // disable start time
+                                $("#time-start option[value='09:00am']").attr("disabled", "disabled");
+                                $("#time-start option[value='10:00am']").attr("disabled", "disabled");
+                                $("#time-start option[value='11:00am']").attr("disabled", "disabled");
+                                $("#time-start option[value='12:00pm']").attr("disabled", "disabled");
+                                $("#time-start option[value='03:00pm']").attr("disabled", "disabled");
+                                $("#time-start option[value='04:00pm']").attr("disabled", "disabled");
+                                $("#time-start option[value='05:00pm']").attr("disabled", "disabled");
+                                $("#time-start option[value='06:00pm']").attr("disabled", "disabled");
+        
+                                // disable end time
+                                $("#time-end option[value='09:00am']").attr("disabled", "disabled");
+                                $("#time-end option[value='10:00am']").attr("disabled", "disabled");
+                                $("#time-end option[value='11:00am']").attr("disabled", "disabled");
+                                $("#time-end option[value='12:00pm']").attr("disabled", "disabled");
+                                $("#time-end option[value='01:00pm']").attr("disabled", "disabled");
+                                $("#time-end option[value='04:00pm']").attr("disabled", "disabled");
+                                $("#time-end option[value='05:00pm']").attr("disabled", "disabled");
+                                $("#time-end option[value='06:00pm']").attr("disabled", "disabled");
+                            } else {
+                                $("#time-start option").removeAttr("disabled");
+                                $("#time-end option").removeAttr("disabled");
+                            }
+                        });
+        
+                        // if 02:00pm start time is selected, disable 02:00pm end time
+                        $("#time-start select").change(function(){
+                            var starttime = $(this).children("option:selected").val();
+                            if (starttime == "02:00pm") {
+                                $("#time-end option[value='02:00pm']").attr("disabled", "disabled");
+                            } else {
+                                $("#time-end option[value='02:00pm']").removeAttr("disabled");
                             }
                         });
         
                         // local storage
                         $(".newbooking").click(function(){
-                            var newbookinga_location = $("#newa-location option:selected").val();
-                            localStorage.setItem("newbookinga_location", newbookinga_location);
+                            var newbooking_location = $("#new-location option:selected").val();
+                            localStorage.setItem("newbooking_location", newbooking_location);
         
-                            var newbookinga_date = $("#newa-date option:selected").val();
-                            localStorage.setItem("newbookinga_date", newbookinga_date);
+                            var newbooking_date = $("#new-date option:selected").val();
+                            localStorage.setItem("newbooking_date", newbooking_date);
         
-                            var newbookinga_start = $("#newa-start option:selected").val();
-                            localStorage.setItem("newbookinga_start", newbookinga_start);
+                            var newbooking_start = $("#new-start option:selected").val();
+                            localStorage.setItem("newbooking_start", newbooking_start);
         
-                            var newbookinga_end = $("#newa-end option:selected").val();
-                            localStorage.setItem("newbookinga_end", newbookinga_end);
+                            var newbooking_end = $("#new-end option:selected").val();
+                            localStorage.setItem("newbooking_end", newbooking_end);
                             window.location.href = "index.html";
                         });
         
@@ -267,7 +313,7 @@
                         $("#validate-promo").click(function() {
                             var srpromo = $("#input-promo").val();
                             if (srpromo == "10OFF") {
-                                $("#total-amount").html("$40.00");
+                                $("#total-amount").html("$19.00");
                                 $("#promo-error").html("<i class='fa fa-check-circle' aria-hidden='true'></i>Promo Code Applied");
                                 $("#promo-error").css("color", "#1fa463");
                             } else if (srpromo.length == 0) {
@@ -282,12 +328,15 @@
                         // Remove Promo Code
                         $("#remove-promo").click(function() {
                             if ($("#input-promo").val().length != 0) {
-                                $("#total-amount").html("$43.00");
+                                $("#total-amount").html("$22.00");
                                 $("#input-promo").val("");
                                 $("#promo-error").html("");
                             } 
                         }); 
                     });
+        
+        
+        
                 </script>
                 <!-- END OF SCRIPTS -->
 </body>

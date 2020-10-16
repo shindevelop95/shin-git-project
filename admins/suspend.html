@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!doctype html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>UOW Room Booking System</title>
+        <!---Bootstrap CDN-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+        <!--font awesome icons-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">   
+        <link rel="stylesheet" href="../css/admin.css">
+        
+    </head>
+    <body>
+        <header>
+            <div class="header-wrap">
+                <div class="container">
+                    <!-- START OF LOGO -->
+                    <div class="flexbox-header">
+                        <div class="image-wrapper">
+                            <img src="../images/uow-logo.png" class="uow-logo">
+                        </div>
+                        <div class="login-wrapper">
+                            <label><span class="logged-in">Logged in as: Admin</span></label>
+                            <a href="login.html" class="btn"><span>Log out</span></a>
+                            <a href="index.html" class="btn"><span>Previous</span></a>
+                        </div>
+                    </div>
+                    <!-- END OF LOGO -->
+                </div>
+            </div>
+        </header>
+        <!-- END OF HEADER SECTION -->
+    
+        <div class="banner-wrap">
+            <img src="../images/banner1.jpeg">
+            <div class="titleheader-wrap">
+                <h2 class="sub-headline">
+                    <span class="first-letter">W</span>elcome
+                </h2>
+                <h1>UOW ROOM BOOKING SYSTEM</h1>
+            </div>
+        </div>
+        <!--Start of Account Management Section-->
+        <section class="acc-manage">
+            <div class="student-view staff-view">
+                <div class="login-history">
+                    <div class="container">
+                        <div class="activities">
+                                <h3>Users Database Management Panel</h3>
+                                <div id="filters" class="button-group text-right font-baloo font-size-16">
+                                    <button class="filter-btn" data-filter="*">All</button>
+                                    <button class="filter-btn" data-filter=".student">Students</button>
+                                    <button class="filter-btn" data-filter=".teacher">Staffs</button>
+                                </div>
+                        </div>
+                        <hr>
+        <!--Start of Student/Staff Card Section-->
+                        <div class="grid card-section ">
+                            <div class="card-wrapper grid-item student">
+                                <div class="card">
+                                    <img src="../images/user1.jpg" alt="" class="card-img">
+                                </div>
+                                <div class="card-content">
+                                    <h5>Student 1</h5>
+                                    <h6>SN: 612345</h6>
+                                    <hr>
+                                    <p>DOB: 11/12/1993</p>
+                                    <span>Year 2</span>
+                                    <div class="button-group">
+                                         <button class="View" data-toggle="modal" data-target="#student-details1"><span>View</span></button> 
+                                         <button class="suspend"><span>Suspend</span></button> 
+                                   </div>
+                                </div>
+                            </div>
+                            <div class="card-wrapper grid-item student">
+                                <div class="card">
+                                    <img src="../images/user1.jpg" alt="" class="card-img">
+                                </div>
+                                <div class="card-content">
+                                    <h5>Student 1</h5>
+                                    <h6>SN: 612345</h6>
+                                    <hr>
+                                    <p>DOB: 11/12/1993</p>
+                                    <span>Year 2</span>
+                                    <div class="button-group">
+                                        <button class="View" data-toggle="modal" data-target="#student-details2"><span>View</span></button> 
+                                        <button class="suspend"><span>Suspend</span></button> 
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="card-wrapper grid-item teacher">
+                                <div class="card">
+                                    <img src="../images/user1.jpg" alt="" class="card-img">
+                                </div>
+                                <div class="card-content">
+                                    <h5>Teacher 1</h5>
+                                    <h6>SN: 612345</h6>
+                                    <hr>
+                                    <p>DOB: 11/12/1993</p>
+                                    <span>Year 2</span>
+                                    <div class="button-group">
+                                        <button class="View" data-toggle="modal" data-target="#teacher-details1"><span>View</span></button> 
+                                        <button class="suspend"><span>Suspend</span></button> 
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="card-wrapper grid-item student card-suspended">
+                                <label class="suspend-label">Account Suspended</label>
+                                <div class="card">
+                                    <img src="../images/user1.jpg" alt="" class="card-img">
+                                </div>
+                                <div class="card-content">
+                                    <h5>Student 1</h5>
+                                    <h6>SN: 612345</h6>
+                                    <hr>
+                                    <p>DOB: 11/12/1993</p>
+                                    <span>Year 2</span>
+                                    <div class="button-group">
+                                        <button class="View"><span>View</span></button> 
+                                        <button class="suspend"><span>Suspend</span></button> 
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="card-wrapper grid-item student">
+                                <div class="card">
+                                    <img src="../images/user1.jpg" alt="" class="card-img">
+                                </div>
+                                <div class="card-content">
+                                    <h5>Student 1</h5>
+                                    <h6>SN: 612345</h6>
+                                    <hr>
+                                    <p>DOB: 11/12/1993</p>
+                                    <span>Year 2</span>
+                                    <div class="button-group">
+                                        <button class="View" data-toggle="modal" data-target="#student-details3"><span>View</span></button> 
+                                        <button class="suspend"><span>Suspend</span></button> 
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="card-wrapper grid-item student">
+                                <div class="card">
+                                    <img src="../images/user1.jpg" alt="" class="card-img">
+                                </div>
+                                <div class="card-content">
+                                    <h5>Student 1</h5>
+                                    <h6>SN: 612345</h6>
+                                    <hr>
+                                    <p>DOB: 11/12/1993</p>
+                                    <span>Year 2</span>
+                                    <div class="button-group">
+                                        <button class="View" data-toggle="modal" data-target="#student-details4"><span>View</span></button> 
+                                        <button class="suspend"><span>Suspend</span></button> 
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="card-wrapper grid-item student">
+                                <div class="card">
+                                    <img src="../images/user1.jpg" alt="" class="card-img">
+                                </div>
+                                <div class="card-content">
+                                    <h5>Student 1</h5>
+                                    <h6>SN: 612345</h6>
+                                    <hr>
+                                    <p>DOB: 11/12/1993</p>
+                                    <span>Year 2</span>
+                                    <div class="button-group">
+                                        <button data-toggle="modal" data-target="#student-details1" class="View"><span>View</span></button> 
+                                        <button class="suspend"><span>Suspend</span></button> 
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="card-wrapper grid-item student">
+                                <div class="card">
+                                    <img src="../images/user1.jpg" alt="" class="card-img">
+                                </div>
+                                <div class="card-content">
+                                    <h5>Student 1</h5>
+                                    <h6>SN: 612345</h6>
+                                    <hr>
+                                    <p>DOB: 11/12/1993</p>
+                                    <span>Year 2</span>
+                                    <div class="button-group">
+                                        <button class="View" data-toggle="modal" data-target="#student-details1"><span>View</span></button> 
+                                        <button class="suspend"><span>Suspend</span></button> 
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="card-wrapper grid-item student">
+                                <div class="card">
+                                    <img src="../images/user1.jpg" alt="" class="card-img">
+                                </div>
+                                <div class="card-content">
+                                    <h5>Student 1</h5>
+                                    <h6>SN: 612345</h6>
+                                    <hr>
+                                    <p>DOB: 11/12/1993</p>
+                                    <span>Year 2</span>
+                                    <div class="button-group">
+                                        <button class="View" data-toggle="modal" data-target="#student-details1"><span>View</span></button> 
+                                        <button class="suspend"><span>Suspend</span></button> 
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="card-wrapper grid-item student">
+                                <div class="card">
+                                    <img src="../images/user1.jpg" alt="" class="card-img">
+                                </div>
+                                <div class="card-content">
+                                    <h5>Student 1</h5>
+                                    <h6>SN: 612345</h6>
+                                    <hr>
+                                    <p>DOB: 11/12/1993</p>
+                                    <span>Year 2</span>
+                                    <div class="button-group">
+                                        <button class="View" data-toggle="modal" data-target="#student-details1"><span>View</span></button> 
+                                        <button class="suspend"><span>Suspend</span></button> 
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="card-wrapper grid-item student">
+                                <div class="card">
+                                    <img src="../images/user1.jpg" alt="" class="card-img">
+                                </div>
+                                <div class="card-content">
+                                    <h5>Student 1</h5>
+                                    <h6>SN: 612345</h6>
+                                    <hr>
+                                    <p>DOB: 11/12/1993</p>
+                                    <span>Year 2</span>
+                                    <div class="button-group">
+                                        <button class="View" data-toggle="modal" data-target="#student-details1"><span>View</span></button> 
+                                        <button class="suspend"><span>Suspend</span></button> 
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="card-wrapper grid-item student">
+                                <div class="card">
+                                    <img src="../images/user1.jpg" alt="" class="card-img">
+                                </div>
+                                <div class="card-content">
+                                    <h5>Student 1</h5>
+                                    <h6>SN: 612345</h6>
+                                    <hr>
+                                    <p>DOB: 11/12/1993</p>
+                                    <span>Year 2</span>
+                                    <div class="button-group">
+                                        <button class="View" data-toggle="modal" data-target="#student-details1"><span>View</span></button> 
+                                        <button class="suspend"><span>Suspend</span></button> 
+                                  </div>
+                                </div>
+                            </div>
+
+                            <div class="card-wrapper grid-item teacher">
+                                <div class="card">
+                                    <img src="../images/user1.jpg" alt="" class="card-img">
+                                </div>
+                                <div class="card-content">
+                                    <h5>Teacher 1</h5>
+                                    <h6>SN: 612345</h6>
+                                    <hr>
+                                    <p>DOB: 11/12/1993</p>
+                                    <span>Year 2</span>
+                                    <div class="button-group">
+                                        <button class="View" data-toggle="modal" data-target="#teacher-details2"><span>View</span></button> 
+                                        <button class="suspend"><span>Suspend</span></button> 
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="card-wrapper grid-item teacher">
+                                <div class="card">
+                                    <img src="../images/user1.jpg" alt="" class="card-img">
+                                </div>
+                                <div class="card-content">
+                                    <h5>Teacher 1</h5>
+                                    <h6>SN: 612345</h6>
+                                    <hr>
+                                    <p>DOB: 11/12/1993</p>
+                                    <span>Year 2</span>
+                                    <div class="button-group">
+                                        <button class="View"data-toggle="modal" data-target="#teacher-details3"><span>View</span></button> 
+                                        <button class="suspend"><span>Suspend</span></button> 
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="card-wrapper grid-item teacher">
+                                <div class="card">
+                                    <img src="../images/user1.jpg" alt="" class="card-img">
+                                </div>
+                                <div class="card-content">
+                                    <h5>Teacher 1</h5>
+                                    <h6>SN: 612345</h6>
+                                    <hr>
+                                    <p>DOB: 11/12/1993</p>
+                                    <span>Year 2</span>
+                                    <div class="button-group">
+                                        <button class="View" data-toggle="modal" data-target="#teacher-details3"><span>View</span></button> 
+                                        <button class="suspend"><span>Suspend</span></button> 
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="card-wrapper grid-item teacher">
+                                <div class="card">
+                                    <img src="../images/user1.jpg" alt="" class="card-img">
+                                </div>
+                                <div class="card-content">
+                                    <h5>Teacher 1</h5>
+                                    <h6>SN: 612345</h6>
+                                    <hr>
+                                    <p>DOB: 11/12/1993</p>
+                                    <span>Year 2</span>
+                                    <div class="button-group">
+                                        <button class="View" data-toggle="modal" data-target="#teacher-details4"><span>View</span></button> 
+                                        <button class="suspend"><span>Suspend</span></button> 
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="card-wrapper grid-item teacher">
+                                <div class="card">
+                                    <img src="../images/user1.jpg" alt="" class="card-img">
+                                </div>
+                                <div class="card-content">
+                                    <h5>Teacher 1</h5>
+                                    <h6>SN: 612345</h6>
+                                    <hr>
+                                    <p>DOB: 11/12/1993</p>
+                                    <span>Year 2</span>
+                                    <div class="button-group">
+                                        <button class="View" data-toggle="modal" data-target="#teacher-details2"><span>View</span></button> 
+                                        <button class="suspend"><span>Suspend</span></button> 
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="card-wrapper grid-item teacher">
+                                <div class="card">
+                                    <img src="../images/user1.jpg" alt="" class="card-img">
+                                </div>
+                                <div class="card-content">
+                                    <h5>Teacher 1</h5>
+                                    <h6>SN: 612345</h6>
+                                    <hr>
+                                    <p>DOB: 11/12/1993</p>
+                                    <span>Year 2</span>
+                                    <div class="button-group">
+                                        <button class="View" data-toggle="modal" data-target="#teacher-details2"><span>View</span></button> 
+                                        <button class="suspend"><span>Suspend</span></button> 
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="card-wrapper grid-item student card-suspended">
+                                <label>Account Suspended</label>
+                                <div class="card">
+                                    <img src="../images/user1.jpg" alt="" class="card-img">
+                                </div>
+                                <div class="card-content">
+                                    <h5>Student 1</h5>
+                                    <h6>SN: 612345</h6>
+                                    <hr>
+                                    <p>DOB: 11/12/1993</p>
+                                    <span>Year 2</span>
+                                    <div class="button-group">
+                                        <button class="View"><span>View</span></button> 
+                                        <button class="suspend"><span>Suspend</span></button> 
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="card-wrapper grid-item student">
+                                <div class="card">
+                                    <img src="../images/user1.jpg" alt="" class="card-img">
+                                </div>
+                                <div class="card-content">
+                                    <h5>Student 1</h5>
+                                    <h6>SN: 612345</h6>
+                                    <hr>
+                                    <p>DOB: 11/12/1993</p>
+                                    <span>Year 2</span>
+                                    <div class="button-group">
+                                        <button class="View" data-toggle="modal" data-target="#student-details1"><span>View</span></button> 
+                                        <button class="suspend"><span>Suspend</span></button> 
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="card-wrapper grid-item teacher">
+                                <div class="card">
+                                    <img src="../images/user1.jpg" alt="" class="card-img">
+                                </div>
+                                <div class="card-content">
+                                    <h5>Teacher 1</h5>
+                                    <h6>SN: 612345</h6>
+                                    <hr>
+                                    <p>DOB: 11/12/1993</p>
+                                    <span>Year 2</span>
+                                    <div class="button-group">
+                                        <button class="View" data-toggle="modal" data-target="#teacher-details3"><span>View</span></button> 
+                                        <button class="suspend"><span>Suspend</span></button> 
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="card-wrapper grid-item student">
+                                <div class="card">
+                                    <img src="../images/user1.jpg" alt="" class="card-img">
+                                </div>
+                                <div class="card-content">
+                                    <h5>Student 1</h5>
+                                    <h6>SN: 612345</h6>
+                                    <hr>
+                                    <p>DOB: 11/12/1993</p>
+                                    <span>Year 2</span>
+                                    <div class="button-group">
+                                        <button class="View" data-toggle="modal" data-target="#student-details1"><span>View</span></button> 
+                                        <button class="suspend"><span>Suspend</span></button> 
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="card-wrapper grid-item student">
+                                <div class="card">
+                                    <img src="../images/user1.jpg" alt="" class="card-img">
+                                </div>
+                                <div class="card-content">
+                                    <h5>Student 1</h5>
+                                    <h6>SN: 612345</h6>
+                                    <hr>
+                                    <p>DOB: 11/12/1993</p>
+                                    <span>Year 2</span>
+                                    <div class="button-group">
+                                        <button class="View" data-toggle="modal" data-target="#student-details1"><span>View</span></button> 
+                                        <button class="suspend"><span>Suspend</span></button> 
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="card-wrapper grid-item student">
+                                <div class="card">
+                                    <img src="../images/user1.jpg" alt="" class="card-img">
+                                </div>
+                                <div class="card-content">
+                                    <h5>Student 1</h5>
+                                    <h6>SN: 612345</h6>
+                                    <hr>
+                                    <p>DOB: 11/12/1993</p>
+                                    <span>Year 2</span>
+                                    <div class="button-group">
+                                        <button class="View" data-toggle="modal" data-target="#student-details1"><span>View</span></button> 
+                                        <button class="suspend"><span>Suspend</span></button> 
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+        <!--End of Student/Staff Card Section-->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End of Account Management Section-->
+        <!--Modal Section-->
+        <!--Student Details-->
+        <div id="student-details1" class="modal fade booking-modal" role="dialog">
+            <div class="modal-dialog">
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">                
+                  <h1>User Details</h1>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                    <div class="modal-body">        
+                        <div class="modal-group">
+                            <div><b>Name:</b></div> 
+                            <div>student01</div>
+                        </div>    
+                        <div class="modal-group">
+                            <div><b>Student Number:</b></div>
+                            <div>678999</div>
+                        </div>
+                        <div class="modal-group">
+                            <div><b>Student Email:</b></div>
+                            <div>student01@school.edu.au</div>
+                        </div>
+                        <div class="modal-group">
+                            <div><b>Gender:</b></div> 
+                            <div>Male</div>
+                        </div> 
+                        <div class="modal-group">
+                            <div><b>Date of Birth:</b></div> 
+                            <div>03-09-2001</div>
+                        </div>    
+                                                                    
+                        <div class="modal-group">
+                            <div><b>Years of Study:</b></div> 
+                            <div>3</div>
+                        </div>
+                        <div class="modal-group">
+                            <div><b>Course:</b></div> 
+                            <div>Bsc in Mechanical Engineering</div>
+                        </div>
+                    </div>
+              </div>
+            </div>
+         </div>
+        <div id="student-details2" class="modal fade booking-modal" role="dialog">
+            <div class="modal-dialog">
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">                
+                  <h1>User Details</h1>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                    <div class="modal-body">        
+                        <div class="modal-group">
+                            <div><b>Name:</b></div> 
+                            <div>student02</div>
+                        </div>    
+                        <div class="modal-group">
+                            <div><b>Student Number:</b></div>
+                            <div>538919</div>
+                        </div>
+                        <div class="modal-group">
+                            <div><b>Student Email:</b></div>
+                            <div>student02@school.edu.au</div>
+                        </div>
+                        <div class="modal-group">
+                            <div><b>Gender:</b></div> 
+                            <div>Female</div>
+                        </div> 
+                        <div class="modal-group">
+                            <div><b>Date of Birth:</b></div> 
+                            <div>03-09-2001</div>
+                        </div>    
+                                                                    
+                        <div class="modal-group">
+                            <div><b>Years of Study:</b></div> 
+                            <div>1</div>
+                        </div>
+                        <div class="modal-group">
+                            <div><b>Course:</b></div> 
+                            <div>Bsc in Accounting</div>
+                        </div>
+                    </div>
+              </div>
+            </div>
+         </div>
+         <div id="student-details3" class="modal fade booking-modal" role="dialog">
+            <div class="modal-dialog">
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">                
+                  <h1>User Details</h1>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                    <div class="modal-body">        
+                        <div class="modal-group">
+                            <div><b>Name:</b></div> 
+                            <div>student03</div>
+                        </div>    
+                        <div class="modal-group">
+                            <div><b>Student Number:</b></div>
+                            <div>468919</div>
+                        </div>
+                        <div class="modal-group">
+                            <div><b>Student Email:</b></div>
+                            <div>student03@school.edu.au</div>
+                        </div>
+                        <div class="modal-group">
+                            <div><b>Gender:</b></div> 
+                            <div>Female</div>
+                        </div> 
+                        <div class="modal-group">
+                            <div><b>Date of Birth:</b></div> 
+                            <div>03-09-2001</div>
+                        </div>    
+                                                                    
+                        <div class="modal-group">
+                            <div><b>Years of Study:</b></div> 
+                            <div>2</div>
+                        </div>
+                        <div class="modal-group">
+                            <div><b>Course:</b></div> 
+                            <div>Bsc in Business Marketing</div>
+                        </div>
+                    </div>
+              </div>
+            </div>
+         </div>
+         <div id="student-details4" class="modal fade booking-modal" role="dialog">
+            <div class="modal-dialog">
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">                
+                  <h1>User Details</h1>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                    <div class="modal-body">        
+                        <div class="modal-group">
+                            <div><b>Name:</b></div> 
+                            <div>student04</div>
+                        </div>    
+                        <div class="modal-group">
+                            <div><b>Student Number:</b></div>
+                            <div>768919</div>
+                        </div>
+                        <div class="modal-group">
+                            <div><b>Student Email:</b></div>
+                            <div>student04@school.edu.au</div>
+                        </div>
+                        <div class="modal-group">
+                            <div><b>Gender:</b></div> 
+                            <div>Male</div>
+                        </div> 
+                        <div class="modal-group">
+                            <div><b>Date of Birth:</b></div> 
+                            <div>03-09-2001</div>
+                        </div>    
+                                                                    
+                        <div class="modal-group">
+                            <div><b>Years of Study:</b></div> 
+                            <div>1</div>
+                        </div>
+                        <div class="modal-group">
+                            <div><b>Course:</b></div> 
+                            <div>Bsc in Computer Science</div>
+                        </div>
+                    </div>
+              </div>
+            </div>
+         </div>
+         <!--End of Student Details-->
+
+         <!--Teachers Detail-->
+         <div id="teacher-details1" class="modal fade booking-modal" role="dialog">
+            <div class="modal-dialog">
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">                
+                  <h1>User Details</h1>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                    <div class="modal-body">        
+                        <div class="modal-group">
+                            <div><b>Name:</b></div> 
+                            <div>Staff01</div>
+                        </div>    
+                        <div class="modal-group">
+                            <div><b>Occupation Number:</b></div>
+                            <div>ON678999</div>
+                        </div>
+                        <div class="modal-group">
+                            <div><b>Staff Email:</b></div>
+                            <div>staff01@school.edu.au</div>
+                        </div>
+                        <div class="modal-group">
+                            <div><b>Gender:</b></div> 
+                            <div>Male</div>
+                        </div> 
+                        <div class="modal-group">
+                            <div><b>Date of Birth:</b></div> 
+                            <div>03-09-2001</div>
+                        </div>    
+                                                                    
+                        <div class="modal-group">
+                            <div><b>Years of Working:</b></div> 
+                            <div>3</div>
+                        </div>
+                        <div class="modal-group">
+                            <div><b>Department:</b></div> 
+                            <div>Teaching</div>
+                        </div>
+                    </div>
+              </div>
+            </div>
+         </div>
+        <div id="teacher-details2" class="modal fade booking-modal" role="dialog">
+            <div class="modal-dialog">
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">                
+                  <h1>User Details</h1>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                    <div class="modal-body">        
+                        <div class="modal-group">
+                            <div><b>Name:</b></div> 
+                            <div>Staff02</div>
+                        </div>    
+                        <div class="modal-group">
+                            <div><b>Occupation Number:</b></div>
+                            <div>ON538919</div>
+                        </div>
+                        <div class="modal-group">
+                            <div><b>Staff Email:</b></div>
+                            <div>staff02@school.edu.au</div>
+                        </div>
+                        <div class="modal-group">
+                            <div><b>Gender:</b></div> 
+                            <div>Female</div>
+                        </div> 
+                        <div class="modal-group">
+                            <div><b>Date of Birth:</b></div> 
+                            <div>03-09-2001</div>
+                        </div>    
+                                                                    
+                        <div class="modal-group">
+                            <div><b>Years of Working:</b></div> 
+                            <div>20</div>
+                        </div>
+                        <div class="modal-group">
+                            <div><b>Department:</b></div> 
+                            <div>Logistic</div>
+                        </div>
+                    </div>
+              </div>
+            </div>
+         </div>
+         <div id="teacher-details3" class="modal fade booking-modal" role="dialog">
+            <div class="modal-dialog">
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">                
+                  <h1>User Details</h1>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                    <div class="modal-body">        
+                        <div class="modal-group">
+                            <div><b>Name:</b></div> 
+                            <div>staff03</div>
+                        </div>    
+                        <div class="modal-group">
+                            <div><b>Occupation Number:</b></div>
+                            <div>ON468919</div>
+                        </div>
+                        <div class="modal-group">
+                            <div><b>Staff Email:</b></div>
+                            <div>staff03@school.edu.au</div>
+                        </div>
+                        <div class="modal-group">
+                            <div><b>Gender:</b></div> 
+                            <div>Female</div>
+                        </div> 
+                        <div class="modal-group">
+                            <div><b>Date of Birth:</b></div> 
+                            <div>03-09-2001</div>
+                        </div>    
+                                                                    
+                        <div class="modal-group">
+                            <div><b>Years of Working:</b></div> 
+                            <div>7</div>
+                        </div>
+                        <div class="modal-group">
+                            <div><b>Department:</b></div> 
+                            <div>Servicing</div>
+                        </div>
+                    </div>
+              </div>
+            </div>
+         </div>
+         <div id="teacher-details4" class="modal fade booking-modal" role="dialog">
+            <div class="modal-dialog">
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">                
+                  <h1>User Details</h1>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                    <div class="modal-body">        
+                        <div class="modal-group">
+                            <div><b>Name:</b></div> 
+                            <div>staff04</div>
+                        </div>    
+                        <div class="modal-group">
+                            <div><b>Occupation Number:</b></div>
+                            <div>ON768919</div>
+                        </div>
+                        <div class="modal-group">
+                            <div><b>Staff Email:</b></div>
+                            <div>staff04@school.edu.au</div>
+                        </div>
+                        <div class="modal-group">
+                            <div><b>Gender:</b></div> 
+                            <div>Male</div>
+                        </div> 
+                        <div class="modal-group">
+                            <div><b>Date of Birth:</b></div> 
+                            <div>03-09-2001</div>
+                        </div>    
+                                                                    
+                        <div class="modal-group">
+                            <div><b>Years of Working:</b></div> 
+                            <div>8</div>
+                        </div>
+                        <div class="modal-group">
+                            <div><b>Department</b></div> 
+                            <div>Sales</div>
+                        </div>
+                    </div>
+              </div>
+            </div>
+         </div>
+         <!--End of Teacher Detail-->
+         
+         <!--End of Modal Section-->
+        <footer class="text-center py-5">
+            &copy; Copyright © 2020 University of Wollongong.
+        </footer>
+        
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+        <!--Owl Carousel Js file-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <script src="../js/main.js"></script>
+
+    </body>
+</html>

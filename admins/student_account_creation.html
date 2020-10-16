@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!doctype html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>UOW Room Booking System</title>
+        <!---Owl-carousel CDN-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha256-UhQQ4fxEeABh4JrcmAJ1+16id/1dnlOEVCFOxDef9Lw=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha256-kksNxjDRxd/5+jGurZUJd1sdR2v+ClrCl3svESBaJqw=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/admin.css">
+    </head>
+<body>
+    <!-- START OF HEADER SECTION -->
+    <header>
+        <div class="header-wrap">
+            <div class="container">
+                <!-- START OF LOGO -->
+                <div class="flexbox-header">
+                    <div class="image-wrapper">
+                        <img src="../images/uow-logo.png" class="uow-logo">
+                    </div>
+                    <div class="login-wrapper">
+                        <label><span class="logged-in">Logged in as: Admin</span></label>
+                        <a href="index.html" class="btn"><span>Previous</span></a>
+                        <a href="login.html" class="btn"><span>Log out</span></a>
+                    </div>
+                </div>
+                <!-- END OF LOGO -->
+            </div>
+        </div>
+    </header>
+
+    <div class="banner-wrap">
+        <img src="../images/banner1.jpeg">
+        <div class="titleheader-wrap">
+            <h2 class="sub-headline">
+                <span class="first-letter">W</span>elcome
+            </h2>
+            <h1>UOW ROOM BOOKING SYSTEM</h1>
+        </div>
+    </div>
+
+    <section class="student-account">
+        <div class="container">
+            <div class="row">
+                    <div class="card col-5">
+                        <h2>Student User Account Creation</h2>
+                        <img src="../images/user1.jpg" alt="" class="card-img">
+                    </div>
+                    <div class="form-right col-7">
+                        <form class="student-form">                      
+                            <div class="form-group">
+                                <label">Student Name:</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="form-group">
+                              <label>Email address:</label>
+                              <input type="email" class="form-control">
+                            </div>
+                            <div class="form-group">
+                              <label>Password:</label>
+                              <input type="password" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label>Confirm Password:</label>
+                                <input type="password" class="form-control">
+                            </div>
+                              <hr>
+                              <h2>Grant Permission</h2>
+                            <div class="form-group form-check">
+                                <label class="select-label">Permission to Edit Rooms &nbsp;</label>
+                                <select class="study-room-select">
+                                    <option></option>
+                                    <option>Yes</option>
+                                    <option>No</option>
+                                </select>
+                            </div>
+                            <div class="form-group form-check">
+                                <label class="select-label">Permission to Create New Rooms &nbsp;</label>
+                                <select class="study-room-select">
+                                    <option></option>
+                                    <option>Yes</option>
+                                    <option>No</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn">Submit</button>
+                        </form>
+                    </div>
+            </div>         
+        </div>
+    </section>
+
+    <footer class="text-center py-5">
+        &copy; Copyright © 2020 University of Wollongong.
+    </footer>
+    </body>
+    </html>
+    <!-- END OF HEADER SECTION -->

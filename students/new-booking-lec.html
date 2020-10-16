@@ -60,7 +60,7 @@
                       <!-- START OF MODIFY BOOKING -->
                         <div class="booking-info col-md-12">
                             <div class="booking-section">
-                                <h2>NEW BOOKING: AUDITORIUM</h2>
+                                <h2>NEW BOOKING: LECTURE HALL</h2>
                                     <hr class="divider">
 
                                     <!-- START OF BOOKING INFO -->   
@@ -68,55 +68,55 @@
                                         
                                         <div class="room-dropdown">
                                             <label>Select Room:</label>
-                                                <select class="auditorium-select" id="newa-location">
-                                                    <option>Select Room</option>
-                                                    <option value="Auditorium A4.11">Auditorium A4.11</option>
-                                                    <option value="Auditorium A4.12">Auditorium A4.12</option>
-                                                    <option value="Auditorium A5.02">Auditorium A5.02</option>
-                                                    <option value="Auditorium A5.11">Auditorium A5.11</option>
-                                                    <option value="Auditorium A5.12">Auditorium A5.12</option>
-                                                </select>
+                                            <select class="lecture-hall-select" id="newlh-location">
+                                                <option>Select Room</option>
+                                                <option value="Lecture Hall L4.11">Lecture Hall L4.11</option>
+                                                <option value="Lecture Hall L4.12">Lecture Hall L4.12</option>
+                                                <option value="Lecture Hall L5.02">Lecture Hall L5.02</option>
+                                                <option value="Lecture Hall L5.11">Lecture Hall L5.11</option>
+                                                <option value="Lecture Hall L5.12">Lecture Hall L5.12</option>
+                                            </select>
                                         </div>
                                   
                                         
                                         <div class="date-dropdown">
                                             <label>Select Date:</label>                                   
-                                                <select id="newa-date">
-                                                    <option value="25 Jun 2020">Monday    (25 Jun 2020)</option>
-                                                    <option value="26 Jun 2020">Tuesday   (26 Jun 2020)</option>
-                                                    <option value="27 Jun 2020">Wednesday (27 Jun 2020) </option>
-                                                    <option value="28 Jun 2020">Thursday  (28 Jun 2020)</option>
-                                                    <option value="29 Jun 2020">Friday    (29 Jun 2020)</option>
+                                                <select id="newlh-date">
+                                                    <option value="18 Jun 2020">Monday  (18 Jun 2020)</option>
+                                                    <option value="19 Jun 2020">Tuesday   (19 Jun 2020)</option>
+                                                    <option value="20 Jun 2020">Wednesday (20 Jun 2020) </option>
+                                                    <option value="21 Jun 2020">Thursday  (21 Jun 2020)</option>
+                                                    <option value="22 Jun 2020">Friday    (22 Jun 2020)</option>
                                                 </select>
                                         </div>
                                     
                                         <div class="time-dropdown">
                                         <label>Select Timing:</label>                                 
-                                                <select id="newa-start">
-                                                    <option value="09:00am">09:00 am</option>
-                                                    <option value="10:00am">10:00 am</option>
-                                                    <option value="11:00am">11:00 am</option>
-                                                    <option value="12:00pm">12:00 pm</option>
-                                                    <option value="01:00pm">01:00 pm</option>
-                                                    <option value="02:00pm">02:00 pm</option>
-                                                    <option value="03:00pm">03:00 pm</option>
-                                                    <option value="04:00pm">04:00 pm</option>
-                                                    <option value="05:00pm">05:00 pm</option>
-                                                    <option value="06:00pm">06:00 pm</option>
-                                                </select>
+                                            <select id="newlh-start">
+                                                <option value="09:00am">09:00 am</option>
+                                                <option value="10:00am">10:00 am</option>
+                                                <option value="11:00am">11:00 am</option>
+                                                <option value="12:00pm">12:00 pm</option>
+                                                <option value="01:00pm">01:00 pm</option>
+                                                <option value="02:00pm">02:00 pm</option>
+                                                <option value="03:00pm">03:00 pm</option>
+                                                <option value="04:00pm">04:00 pm</option>
+                                                <option value="05:00pm">05:00 pm</option>
+                                                <option value="06:00pm">06:00 pm</option>
+                                            </select>
                                         
                                         <label>to</label>
-                                                <select id="newa-end">
-                                                    <option value="10:00am">10:00 am</option>
-                                                    <option value="11:00am">11:00 am</option>
-                                                    <option value="12:00pm">12:00 pm</option>
-                                                    <option value="01:00pm">01:00 pm</option>
-                                                    <option value="02:00pm">02:00 pm</option>
-                                                    <option value="03:00pm">03:00 pm</option>
-                                                    <option value="04:00pm">04:00 pm</option>
-                                                    <option value="05:00pm">05:00 pm</option>
-                                                    <option value="06:00pm">06:00 pm</option>
-                                                </select>
+                                            <select id="newlh-end">
+                                                <option value="10:00am">10:00 am</option>
+                                                <option value="11:00am">11:00 am</option>
+                                                <option value="12:00pm">12:00 pm</option>
+                                                <option value="01:00pm">01:00 pm</option>
+                                                <option value="02:00pm">02:00 pm</option>
+                                                <option value="03:00pm">03:00 pm</option>
+                                                <option value="04:00pm">04:00 pm</option>
+                                                <option value="05:00pm">05:00 pm</option>
+                                                <option value="06:00pm">06:00 pm</option>
+                                            </select>
                                         </div>
                                         <div class="booking-confirm">
                                             <button class="newbooking btn" onclick="location.href='index.html#existing-booking'"><span>MAKE PAYMENT</span></button>
@@ -176,45 +176,46 @@
         
                     $(document).ready(function() {
                         // Change Timings based on room selection - Serialize Data (Available Timings)
-                        $("select.auditorium-select").change(function(){
+                        $("select.lecture-hall-select").change(function(){
                             var room = $(this).children("option:selected").val();
-                            if (room == "Auditorium A4.11") {
+                            if (room == "Lecture Hall L4.11") {
                                 $("#weekly-schedule").data('artsy.dayScheduleSelector').deserialize({
                                     '1': [['14:00','16:00']],
-                                    '2': [['11:00','14:00']],
-                                    '4': [['10:00','12:00']], 
-                                    '5': [['09:00','11:00'], ['15:00','18:00']]
+                                    '2': [['16:00','19:00']],
+                                    '5': [['10:00','13:00'], ['15:00','18:00']]
                                 });
-                            } else if (room == "Auditorium A4.12") {
+                            } else if (room == "Lecture Hall L4.12") {
                                 $('.time-slot').removeAttr('id');
                                 $("#weekly-schedule").data('artsy.dayScheduleSelector').deserialize({
                                     '1': [['10:00','12:00']],
                                     '2': [['11:00','14:00'], ['16:00','19:00']],
                                     '3': [['15:00','17:00']],
-                                    '4': [['11:00','13:00']], 
                                     '5': [['09:00','11:00']]
                                 });
-                            } else if (room == "Auditorium A5.02") {
+                            } else if (room == "Lecture Hall L5.02") {
                                 $('.time-slot').removeAttr('id');
                                 $("#weekly-schedule").data('artsy.dayScheduleSelector').deserialize({
-                                    '2': [['13:00','15:00'], ['16:00','19:00']],
+                                    '1': [['11:00','13:00']],
+                                    '2': [['16:00','19:00']],
                                     '3': [['11:00','16:00']],
-                                    '5': [['09:00','11:00']]
+                                    '4': [['11:00','13:00']], 
+                                    '5': [['09:00','11:00'], ['14:00','18:00']]
                                 });
-                            } else if (room == "Auditorium A5.11") {
+                            } else if (room == "Lecture Hall L5.11") {
                                 $('.time-slot').removeAttr('id');
                                 $("#weekly-schedule").data('artsy.dayScheduleSelector').deserialize({
-                                    '1': [['10:00','12:00']],
+                                    '1': [['11:00','13:00']],
                                     '2': [['11:00','14:00'], ['16:00','19:00']],
                                     '3': [['14:00','16:00']],
                                     '4': [['10:00','12:00']], 
                                     '5': [['09:00','11:00'], ['16:00','18:00']]
                                 });
-                            } else if (room == "Auditorium A5.12") {
+                            } else if (room == "Lecture Hall L5.12") {
                                 $('.time-slot').removeAttr('id');
                                 $("#weekly-schedule").data('artsy.dayScheduleSelector').deserialize({
                                     '2': [['16:00','19:00']],
                                     '3': [['14:00','16:00']],
+                                    '4': [['12:00','15:00']], 
                                     '5': [['09:00','11:00'], ['16:00','18:00']]
                                 });
                             } else {
@@ -232,34 +233,34 @@
                         $('.time-label9').html("06:00pm");
         
                         // Set price based on room selected
-                        $("select.auditorium-select").change(function(){
+                        $("select.lecture-hall-select").change(function(){
                             var room = $(this).children("option:selected").val();
-                            if (room == "Auditorium A4.11") {
-                                $("#total-amount").html("$43.00");
-                            } else if (room == "Auditorium A4.12") {
-                                $("#total-amount").html("$48.00");
-                            } else if (room == "Auditorium A5.02") {
-                                $("#total-amount").html("$50.00");
-                            } else if (room == "Auditorium A5.11") {
-                                $("#total-amount").html("$46.00");
+                            if (room == "Lecture Hall L4.11") {
+                                $("#total-amount").html("$56.00");
+                            } else if (room == "Lecture Hall L4.12") {
+                                $("#total-amount").html("$60.00");
+                            } else if (room == "Lecture Hall L5.02") {
+                                $("#total-amount").html("$57.00");
+                            } else if (room == "Lecture Hall L5.11") {
+                                $("#total-amount").html("$59.00");
                             } else {
-                                $("#total-amount").html("$58.00");
+                                $("#total-amount").html("$65.00");
                             }
                         });
         
                         // local storage
                         $(".newbooking").click(function(){
-                            var newbookinga_location = $("#newa-location option:selected").val();
-                            localStorage.setItem("newbookinga_location", newbookinga_location);
+                            var newbookinglh_location = $("#newlh-location option:selected").val();
+                            localStorage.setItem("newbookinglh_location", newbookinglh_location);
         
-                            var newbookinga_date = $("#newa-date option:selected").val();
-                            localStorage.setItem("newbookinga_date", newbookinga_date);
+                            var newbookinglh_date = $("#newlh-date option:selected").val();
+                            localStorage.setItem("newbookinglh_date", newbookinglh_date);
         
-                            var newbookinga_start = $("#newa-start option:selected").val();
-                            localStorage.setItem("newbookinga_start", newbookinga_start);
+                            var newbookinglh_start = $("#newlh-start option:selected").val();
+                            localStorage.setItem("newbookinglh_start", newbookinglh_start);
         
-                            var newbookinga_end = $("#newa-end option:selected").val();
-                            localStorage.setItem("newbookinga_end", newbookinga_end);
+                            var newbookinglh_end = $("#newlh-end option:selected").val();
+                            localStorage.setItem("newbookinglh_end", newbookinglh_end);
                             window.location.href = "index.html";
                         });
         
@@ -267,7 +268,7 @@
                         $("#validate-promo").click(function() {
                             var srpromo = $("#input-promo").val();
                             if (srpromo == "10OFF") {
-                                $("#total-amount").html("$40.00");
+                                $("#total-amount").html("$51.00");
                                 $("#promo-error").html("<i class='fa fa-check-circle' aria-hidden='true'></i>Promo Code Applied");
                                 $("#promo-error").css("color", "#1fa463");
                             } else if (srpromo.length == 0) {
@@ -282,7 +283,7 @@
                         // Remove Promo Code
                         $("#remove-promo").click(function() {
                             if ($("#input-promo").val().length != 0) {
-                                $("#total-amount").html("$43.00");
+                                $("#total-amount").html("$56.00");
                                 $("#input-promo").val("");
                                 $("#promo-error").html("");
                             } 
