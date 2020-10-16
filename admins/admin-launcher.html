@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>UOW Room Booking System</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/jquery-ui.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/font-awesome.css" type="text/css" />
+    <link rel="stylesheet" href="../css/admin.css" type="text/css" />
+
+    <script src="../js/modernizr-2.8.3.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery-1.12.0.min.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+    <script src="../js/plugins.js"></script>
+    <script src="../js/schedule.js"></script>
+    <script src="../js/admin-launcher.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-wrap">
+            <div class="container">
+                <!-- START OF LOGO -->
+                <div class="flexbox-header">
+                    <div class="image-wrapper">
+                        <img src="../images/uow-logo.png" class="uow-logo">
+                    </div>
+                    <div class="login-wrapper">
+                        <label><span class="logged-in">Logged in as: Administrator</span></label>
+                        <a href="login.php" class="btn"><span>Log out</span></a>
+                    </div>
+                </div>
+                <!-- END OF LOGO -->
+            </div>
+        </div>
+    </header>
+    <!-- END OF NAVIGATION -->
+
+    <!-- START OF HOMEPAGE BANNER -->
+    <div class="banner-wrap">
+        <img src="../images/banner1.jpeg">
+        <div class="titleheader-wrap">
+            <h2 class="sub-headline">
+                <span class="first-letter">W</span>elcome
+            </h2>
+            <h1 class="animate-right">UOW ROOM BOOKING SYSTEM</h1>
+        </div>
+    </div>
+    <!-- END OF HOMEPAGE BANNER -->
+
+    <section class="student-wrap">
+        <div class="container">
+            <div class="row">
+                <!-- START OF LAUNCH -->
+                <div class="booking-info col-md-12">
+                    <div class="booking-section">
+                        <h2>LAUNCH NEW ROOM</h2>
+                            <hr class="divider">                     
+                            <form id="booking-form" action="#.php" method="POST">
+                                <div class="tab-content">
+                                    <div class="tab-pane" id="step1">
+                                        <ul>
+                                            <li>
+                                                <label>Room type</label>
+                                                <div class="errorTxt"></div>
+                                                <select name="bf_totalGuests" required>
+                                                    <option disabled selected hidden>Room Type</option>
+                                                    <option value="Lecture Threatre">Lecture Threatre</option>
+                                                    <option value="Auditorium">Auditorium</option>
+                                                    <option value="Library Room">Library Room</option>
+                                                    <option value="Study Room">Study Room</option>
+                                                    <option value="Studio">Studio</option>
+                                                    <option value="Staff Meeting Room">Staff Meeting Room</option>
+                                                    <option value="Club Room">Club Room</option>
+                                                    <option value="Research Facilities">Research Facilities</option>
+                                                </select>
+                                            </li>
+
+                                          <li style="list-style: none; display: inline">
+                                            <button class="next-btn next-btn1" type="button">Next</button>
+                                          </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="tab-pane" id="step2">
+                                        <ul>
+                                            <li>
+                                                <label>Enter a name for your room</label>
+                                                <div class="errorTxt"></div>
+                                                <input type="text" class="datepicker" name="bf_date">
+                                            </li>
+                                            <li>
+                                                <label>Which time of day?</label>
+                                                <div class="errorTxt"></div>
+                                                    <select name="bf_time">
+                                                        <option disabled selected hidden>Available from</option>
+                                                        <option>09:00 am</option>
+                                                        <option>10:00 am</option>
+                                                        <option>11:00 am</option>
+                                                        <option>12:00 pm</option>
+                                                        <option>01:00 pm</option>
+                                                        <option>02:00 pm</option>
+                                                        <option>03:00 pm</option>
+                                                        <option>04:00 pm</option>
+                                                        <option>05:00 pm</option>
+                                                        <option>06:00 pm</option>
+                                                    </select>
+                                            </li>
+                                            <li>
+                                                <label>Until what time?</label>
+                                                    <div class="errorTxt"></div>
+                                                    <select name="bf_hours">
+                                                        <option disabled selected hidden>until</option>
+                                                        <option>10:00 am</option>
+                                                        <option>11:00 am</option>
+                                                        <option>12:00 pm</option>
+                                                        <option>01:00 pm</option>
+                                                        <option>02:00 pm</option>
+                                                        <option>03:00 pm</option>
+                                                        <option>04:00 pm</option>
+                                                        <option>05:00 pm</option>
+                                                        <option>06:00 pm</option>
+                                                        </select>
+                                            </li>
+                                            <li>
+                                                <button class="next-btn next-btn2" type="button">Next</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="tab-pane" id="step3">
+                                        <ul>
+                                            <li>
+                                                <label>Total price:</label>
+                                                <div class="errorTxt"></div>
+                                                <input type="text" name="bf_fullname">
+                                            </li>
+                      
+                                            <li>
+                                                <button class="submit-btn" type="submit">Request My Free Estimate</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="progress-wrap">
+                                    <div class="line-progress-bar">
+                                        <div class="line"></div>
+                                        <ul class="checkout-bar">
+                                          <li class="progressbar-dots active"><span>step 1</span></li>
+                                          <li class="progressbar-dots"><span>step 2</span></li>
+                                          <li class="progressbar-dots"><span>Final step</span></li>
+                                        </ul>
+                                    </div>
+                                </div>                              
+                        </form>                                              
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+                <!-- END OF LAUNCH -->                        
+
+    <footer class="text-center py-5">
+        &copy; Copyright © 2020 University of Wollongong.
+    </footer>
+ 
+</body>
+</html>
