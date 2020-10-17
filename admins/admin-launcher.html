@@ -65,102 +65,60 @@
                         <h2>LAUNCH NEW ROOM</h2>
                             <hr class="divider">                     
                             <form id="booking-form" action="#.php" method="POST">
-                                <div class="tab-content">
-                                    <div class="tab-pane" id="step1">
-                                        <ul>
-                                            <li>
-                                                <label>Room type</label>
-                                                <div class="errorTxt"></div>
-                                                <select name="bf_totalGuests" required>
-                                                    <option disabled selected hidden>Room Type</option>
-                                                    <option value="Lecture Threatre">Lecture Threatre</option>
-                                                    <option value="Auditorium">Auditorium</option>
-                                                    <option value="Library Room">Library Room</option>
-                                                    <option value="Study Room">Study Room</option>
-                                                    <option value="Studio">Studio</option>
-                                                    <option value="Staff Meeting Room">Staff Meeting Room</option>
-                                                    <option value="Club Room">Club Room</option>
-                                                    <option value="Research Facilities">Research Facilities</option>
-                                                </select>
-                                            </li>
 
-                                          <li style="list-style: none; display: inline">
-                                            <button class="next-btn next-btn1" type="button">Next</button>
-                                          </li>
-                                        </ul>
-                                    </div>
+                                <label>Room type</label>
+                                <select required>
+                                    <option disabled selected hidden>Room Type</option>
+                                    <option value="Lecture Threatre">Lecture Threatre</option>
+                                    <option value="Auditorium">Auditorium</option>
+                                    <option value="Library Room">Library Room</option>
+                                    <option value="Study Room">Study Room</option>
+                                    <option value="Studio">Studio</option>
+                                    <option value="Staff Meeting Room">Staff Meeting Room</option>
+                                    <option value="Club Room">Club Room</option>
+                                    <option value="Research Facilities">Research Facilities</option>
+                                </select>
+                                <br>
 
-                                    <div class="tab-pane" id="step2">
-                                        <ul>
-                                            <li>
-                                                <label>Enter a name for your room</label>
-                                                <div class="errorTxt"></div>
-                                                <input type="text" class="datepicker" name="bf_date">
-                                            </li>
-                                            <li>
-                                                <label>Which time of day?</label>
-                                                <div class="errorTxt"></div>
-                                                    <select name="bf_time">
-                                                        <option disabled selected hidden>Available from</option>
-                                                        <option>09:00 am</option>
-                                                        <option>10:00 am</option>
-                                                        <option>11:00 am</option>
-                                                        <option>12:00 pm</option>
-                                                        <option>01:00 pm</option>
-                                                        <option>02:00 pm</option>
-                                                        <option>03:00 pm</option>
-                                                        <option>04:00 pm</option>
-                                                        <option>05:00 pm</option>
-                                                        <option>06:00 pm</option>
-                                                    </select>
-                                            </li>
-                                            <li>
-                                                <label>Until what time?</label>
-                                                    <div class="errorTxt"></div>
-                                                    <select name="bf_hours">
-                                                        <option disabled selected hidden>until</option>
-                                                        <option>10:00 am</option>
-                                                        <option>11:00 am</option>
-                                                        <option>12:00 pm</option>
-                                                        <option>01:00 pm</option>
-                                                        <option>02:00 pm</option>
-                                                        <option>03:00 pm</option>
-                                                        <option>04:00 pm</option>
-                                                        <option>05:00 pm</option>
-                                                        <option>06:00 pm</option>
-                                                        </select>
-                                            </li>
-                                            <li>
-                                                <button class="next-btn next-btn2" type="button">Next</button>
-                                            </li>
-                                        </ul>
-                                    </div>
+                                <label>Name of room</label>
+                                <input type="text" required>
+                                <br>
 
-                                    <div class="tab-pane" id="step3">
-                                        <ul>
-                                            <li>
-                                                <label>Total price:</label>
-                                                <div class="errorTxt"></div>
-                                                <input type="text" name="bf_fullname">
-                                            </li>
-                      
-                                            <li>
-                                                <button class="submit-btn" type="submit">Request My Free Estimate</button>
-                                            </li>
-                                        </ul>
-                                    </div>
+                                <label>Timeslot availability</label>
+                                    <select>
+                                        <option disabled selected hidden>Available from</option>
+                                        <option>09:00 am</option>
+                                        <option>10:00 am</option>
+                                        <option>11:00 am</option>
+                                        <option>12:00 pm</option>
+                                        <option>01:00 pm</option>
+                                        <option>02:00 pm</option>
+                                        <option>03:00 pm</option>
+                                        <option>04:00 pm</option>
+                                        <option>05:00 pm</option>
+                                        <option>06:00 pm</option>
+                                    </select>
+                                <br>
+
+                                <label>Max capacity</label>
+                                <input type="text" required>
+                                <br>
+
+                                <label>Availability</label>
+                                    <select>
+                                        <option disabled selected hidden>Select availability</option>
+                                        <option value="Yes">Yes</option>
+                                        <option value="No">No</option>
+                                    </select>
+                                <br>
+
+                                <label>Price</label>
+                                <input type="text" value="GET price" disabled>
+                                <br>
+                                
+                                <div class="launcherSubmit">
+                                    <button class="modifybooking btn"><span>Launch room</span></button>
                                 </div>
-
-                                <div class="progress-wrap">
-                                    <div class="line-progress-bar">
-                                        <div class="line"></div>
-                                        <ul class="checkout-bar">
-                                          <li class="progressbar-dots active"><span>step 1</span></li>
-                                          <li class="progressbar-dots"><span>step 2</span></li>
-                                          <li class="progressbar-dots"><span>Final step</span></li>
-                                        </ul>
-                                    </div>
-                                </div>                              
                         </form>                                              
                     </div>
                 </div>
