@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>UOW Room Booking System</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/jquery-ui.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/font-awesome.css" type="text/css" />
+	<link rel="stylesheet" href="../css/confirmation.css">
+
+    <script src="../js/modernizr-2.8.3.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery-1.12.0.min.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+    <script src="../js/plugins.js"></script>
+    <script src="../js/schedule.js"></script>
+</head>
+<body>
+	<!-- START OF NAVIGATION -->
+    <header>
+        <div class="header-wrap">
+            <div class="container">
+                <!-- START OF LOGO -->
+                <div class="flexbox-header">
+                    <div class="image-wrapper">
+                        <img src="../images/uow-logo.png" class="uow-logo">
+                    </div>
+                    <div class="login-wrapper">
+                        <label><span class="logged-in">Logged in as: shinw042@mymail.com</span></label>
+                        <a href="login.php" class="btn"><span>Log out</span></a>
+                    </div>
+                </div>
+                <!-- END OF LOGO -->
+            </div>
+        </div>
+    </header>
+    <!-- END OF NAVIGATION -->
+
+    <!-- START OF HOMEPAGE BANNER -->
+    <div class="banner-wrap">
+        <img src="../images/banner1.jpeg">
+        <div class="titleheader-wrap">
+            <h2 class="sub-headline">
+                <span class="first-letter">W</span>elcome
+            </h2>
+            <h1 class="animate-right">UOW ROOM BOOKING SYSTEM</h1>
+        </div>
+    </div>
+    <!-- END OF HOMEPAGE BANNER -->
+
+	<!-- START OF CONFIRMATION DETAILS -->
+	<section class="booking-confirmation-wrap">
+		<!-- CONFIRMATION IMAGE & TEXT -->
+		<div class="confirm-image-text-div"> 
+			<img src="../images/confirm.png" class="confirm-icon">
+			<p class="confirm-text">Booking Confirmed!</p>
+		</div>
+		<!-- DISPLAY DETAILS -->
+		<div class="confirm-details">
+			<p><img src="../images/location.png">  Location:  <span id="text-room"></span></p>
+			<p><img src="../images/date.png">  Date:  <span id="text-date"></span></p>
+			<p><img src="../images/clock.png">  Time:  <span id="text-start"></span> to <span id="text-end"></span></p>
+		</div>
+	</section>
+    <!-- END OF CONFIRMATION DETAILS -->
+	
+	<!-- BUTTON TO GO BACK TO INDEX PAGE-->
+    <div class="back-to-index">
+	<!-- CLICK ON BUTTON TO REDIRECT TO INDEX -->
+    <button class="btn-back" onclick="location.href='index.html#existing-booking'"><span>BACK</span></button>
+    </div>
+	
+	<footer class="text-center py-5">
+        &copy; Copyright © 2020 University of Wollongong.
+    </footer>
+	
+    <!-- START OF SCRIPTS -->
+	<script>
+	window.addEventListener('load',()=>{
+		const params = (new URL(document.location)).searchParams;
+		const room = params.get('select-room');
+		const date = params.get('select-date');
+		const start = params.get('select-time-start');
+		const end = params.get('select-time-end');
+			
+		document.getElementById('text-room').innerHTML = room;
+		document.getElementById('text-date').innerHTML = date;
+		document.getElementById('text-start').innerHTML = start;
+		document.getElementById('text-end').innerHTML = end;
+	})
+	</script>
+    <!-- END OF SCRIPTS -->
+</body>
+</html>

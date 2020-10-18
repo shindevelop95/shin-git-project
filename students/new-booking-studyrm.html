@@ -66,66 +66,75 @@
                                     <!-- START OF BOOKING INFO -->   
                                     <div class="booking-info">
                                         
-                                        <div class="room-dropdown">
-                                            <label>Select Room:</label>
-                                                <select class="study-room-select" id="new-location">
-                                                    <option>Select Room</option>
-                                                    <option value="Study Room L4.11">Study Room L4.11</option>
-                                                    <option value="Study Room L4.12">Study Room L4.12</option>
-                                                    <option value="Study Room L5.02">Study Room L5.02</option>
-                                                    <option value="Study Room L5.11">Study Room L5.11</option>
-                                                    <option value="Study Room L5.12">Study Room L5.12</option>
-                                                </select>
-                                        </div>
-                                  
-                                        
-                                        <div class="date-dropdown">
-                                            <label>Select Date:</label>                                   
-                                                <select class="sr-date-select" id="new-date">
-                                                    <option>Select Date</option>
-                                                    <option value="15 Jun 2020">Monday (15 Jun 2020)</option>
-                                                    <option value="16 Jun 2020">Tuesday   (16 Jun 2020)</option>
-                                                    <option value="17 Jun 2020">Wednesday (17 Jun 2020) </option>
-                                                    <option value="18 Jun 2020">Thursday  (18 Jun 2020)</option>
-                                                    <option value="19 Jun 2020">Friday    (19 Jun 2020)</option>
-                                                </select>
-                                        </div>
-                                    
-                                        <div class="time-dropdown">
-                                        <label>Select Timing:</label>                                 
-                                            <select id="new-start">
-                                                <option>Select Start Time</option>
-                                                <option value="09:00am">09:00 am</option>
-                                                <option value="10:00am">10:00 am</option>
-                                                <option value="11:00am">11:00 am</option>
-                                                <option value="12:00pm">12:00 pm</option>
-                                                <option value="01:00pm">01:00 pm</option>
-                                                <option value="02:00pm">02:00 pm</option>
-                                                <option value="03:00pm">03:00 pm</option>
-                                                <option value="04:00pm">04:00 pm</option>
-                                                <option value="05:00pm">05:00 pm</option>
-                                                <option value="06:00pm">06:00 pm</option>
-                                            </select>
-                                        
-                                        <label>to</label>
-                                            <select id="new-end">
-                                                <option>Select End Time</option>
-                                                <option value="10:00am">10:00 am</option>
-                                                <option value="11:00am">11:00 am</option>
-                                                <option value="12:00pm">12:00 pm</option>
-                                                <option value="01:00pm">01:00 pm</option>
-                                                <option value="02:00pm">02:00 pm</option>
-                                                <option value="03:00pm">03:00 pm</option>
-                                                <option value="04:00pm">04:00 pm</option>
-                                                <option value="05:00pm">05:00 pm</option>
-                                                <option value="06:00pm">06:00 pm</option>
-                                            </select>
-                                        </div>
-                                        <div class="booking-confirm">
-                                            <button class="newbooking btn" onclick="location.href='index.html#existing-booking'"><span>MAKE PAYMENT</span></button>
-                                        </div>
+										<!-- BOOKING FORM -->
+										<form action="booking-confirmation.html" method="get" id="booking-form">
+											<!-- ROOM SELECTION -->
+											<div class="room-dropdown">
+												<label>Select Room:</label>
+													<select class="study-room-select" id="new-location" name="select-room">
+														<option>Select Room</option>
+														<option value="Study Room L4.11">Study Room L4.11</option>
+														<option value="Study Room L4.12">Study Room L4.12</option>
+														<option value="Study Room L5.02">Study Room L5.02</option>
+														<option value="Study Room L5.11">Study Room L5.11</option>
+														<option value="Study Room L5.12">Study Room L5.12</option>
+													</select>
+											</div>
+									  
+											<!-- DATE SELECTION -->
+											<div class="date-dropdown">
+												<label>Select Date:</label>                                   
+													<select class="sr-date-select" id="new-date" name="select-date">
+														<option>Select Date</option>
+														<option value="15 Jun 2020">Monday (15 Jun 2020)</option>
+														<option value="16 Jun 2020">Tuesday   (16 Jun 2020)</option>
+														<option value="17 Jun 2020">Wednesday (17 Jun 2020) </option>
+														<option value="18 Jun 2020">Thursday  (18 Jun 2020)</option>
+														<option value="19 Jun 2020">Friday    (19 Jun 2020)</option>
+													</select>
+											</div>
+										
+											<!-- START TIME SELECTION -->
+											<div class="time-dropdown">
+											<label>Select Timing:</label>                                 
+												<select id="new-start" name="select-time-start">
+													<option>Select Start Time</option>
+													<option value="09:00am">09:00 am</option>
+													<option value="10:00am">10:00 am</option>
+													<option value="11:00am">11:00 am</option>
+													<option value="12:00pm">12:00 pm</option>
+													<option value="01:00pm">01:00 pm</option>
+													<option value="02:00pm">02:00 pm</option>
+													<option value="03:00pm">03:00 pm</option>
+													<option value="04:00pm">04:00 pm</option>
+													<option value="05:00pm">05:00 pm</option>
+													<option value="06:00pm">06:00 pm</option>
+												</select>
+											
+											<!-- END TIME SELECTION -->
+											<label>to</label>
+												<select id="new-end" name="select-time-end">
+													<option>Select End Time</option>
+													<option value="10:00am">10:00 am</option>
+													<option value="11:00am">11:00 am</option>
+													<option value="12:00pm">12:00 pm</option>
+													<option value="01:00pm">01:00 pm</option>
+													<option value="02:00pm">02:00 pm</option>
+													<option value="03:00pm">03:00 pm</option>
+													<option value="04:00pm">04:00 pm</option>
+													<option value="05:00pm">05:00 pm</option>
+													<option value="06:00pm">06:00 pm</option>
+												</select>
+											</div>
+										</form>
                                     </div>                  
-                                    <!-- END OF BOOKING INFO -->           
+                                    <!-- END OF BOOKING INFO -->  
+									
+									<!-- MAKE PAYMENT BUTTON & REDIRECT TO CONFIRMATION PAGE-->
+                                    <div class="booking-confirm">
+										<!-- CLICK ON BUTTON TO REDIRECT TO CONFIRMATION PAGE -->
+                                        <button class="newbooking btn" type="submit" form="booking-form" value="Submit"><span>MAKE PAYMENT</span></button>
+                                    </div>
                             </div>
                             
                                     <!-- START OF AVAILABLE TIMINGS -->
@@ -306,7 +315,7 @@
         
                             var newbooking_end = $("#new-end option:selected").val();
                             localStorage.setItem("newbooking_end", newbooking_end);
-                            window.location.href = "index.html";
+                            //window.location.href = "index.html";
                         });
         
                         // Apply Promo Code
